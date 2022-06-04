@@ -23,21 +23,25 @@
     <title>em과 rem</title>
 
     <style>
+        .outer {
+            font-size: 24px;  /*부모 요소의 폰트 사이즈를 inner가 상속받아 폰트 사이즈 24px로 됨*/
+        }
         .inner {
+            /*font-size: 2em; /*부모 요소의 글꼴 크기, 1em은 24px, 2em은 48px*/
+            /*font-size: 1rem; /*html 요소의 글자 크기 (기본값 : 16px, 위에 px 기본값을 바꾸면 기본값 * n(rem))*/
+            font-size: 16px;
             display: inline-block; /*요소는 inline, 내부는 block, 박스 모양이 inline처럼 옆으로 늘어섬*/
             width: 200px;
             height: 200px;
             background-color: tomato;
+            padding : 1rem;
+            margin : 1rem;
+            /*padding, margin 에서의 em은 자기 자신의 폰트 사이즈 기반을 두고 있음 (나의 폰트 사이즈 : 16px!)*/
         }
 
     </style>
 </head>
 <body>
-    <!-- <h1>안녕하세요 여러분, 이 내용은 다 아실듯...</h1> 
-    <div style="font-size : 20px;">
-        <p>자식 요소의 1em은 20px</p>
-        <p>자식 요소의 2em은 40px</p> -->
-
     <div class = "outer">
         <div class = "inner">고양이</div> 
     </div>
