@@ -13,7 +13,12 @@
     <!--백분율 값 : 보통 부모 요소와 상대적 크기를 지정할 때 사용 / 너비, 높이, 여백 뿐아니라 글 크기에도 사용 가능-->
     <!-- ex) font-size : 50% (부모 요소의 글자 크기가 100%)-->
 
+    <!--비율 계산 기반으로 변화하는 가변 레이아웃에는 % 주로 사용-->
+    <!--너비와 여백은 부모 요소의 너비에 비례해 계산. 높이, 글자도 동일-->
     <style>
+        * {
+            box-sizing: border-box;
+        }
         .container { /* 가로가 960 이하면 잘림! 고정 가변 레이아웃을 만들어야 함*/
             width: 90%; /*body의 90% 차지*/
             margin : 0 auto;
@@ -29,12 +34,14 @@
             width: 67%; /*960에서 640은 몇 %인가? = 640 / 960 = 66.66666%*/
             height: 300px;
             background-color: orange;
+            padding :10%;
         }
         .aside {
             float: right; /*float = 뜨다 / 오른쪽으로 뜨게 하다*/
             width: 33%; /*main의 px은 640이고 aside는 320인 1/2이기 때문에 67%의 1/2인 33%!*/
             height: 300px;
             background-color: purple;
+            padding :10%;
         }
         .footer {
             clear: both; /*float의 효과를 받지 않겠다! 왼쪽, 오른쪽 둘다(both)*/
