@@ -1,0 +1,93 @@
+.header {
+    position: fixed;
+    top : 0;
+    left: 0;
+    width: 100%; /*넓게 채운다*/
+    background-color: white;
+    box-shadow: 0 0 3px; /*블러를 주는 것 그림자*/
+    z-index: 20; /*요소가 겹쳤을 때 위에 올라오도록 (숫자가 클 수록 위로 올라옴)*/
+}
+
+.header_wrapper { /*header 감싼 틀*/
+    display: flex; /*header_start, end 요소가 일차원으로 정렬, 가로!*/
+    align-items: center; /*세로축에서 가운데에 두겠다.*/
+    justify-content: space-between; /*가로축에서의 정렬 양끝으로 펼치겠다)*/
+    height: 60px;
+    padding: 0 16px; /*위아래 0 양끝 16px*/
+}
+
+.header_start { /*햄버거 바 + 타이틀*/
+    height: 40px; /*현 header 60px*/
+    line-height: 40px; /*줄높이, 요소 높이 일정*/
+}
+
+.header_hamburger { /*햄버거 바*/
+    border: none; /*보더 제거*/
+    background-color: transparent; /*투명색*/
+    font-size : 1.5rem; /*현재 폰트사이즈 16px (16 * 1.5 ) = 24px*/
+}
+
+.header_title { /*타이틀*/
+    font-size: 1.2rem;
+    margin-left: 6px;
+}
+.header_center {
+    width: 50%;
+}
+
+.header_form {
+    display: flex; /*옆으로 붙이기*/
+    max-width: 100%; /*50% 위치를 따라가는 것, 크기도 따라가게 함*/
+}
+
+.header_input--text {
+    width: calc(100% - 60px); /*자기가 속한 전체 영역 - 버튼 크기*/
+    height: 40px;
+    padding: 0 6px;
+    border: 1px solid #8f8f8f;
+    border-right: none;
+    border-radius: 2px 0 0 2px; /*입력창과 붙어있는 부분이 매끈해야 함(둥글게)*/
+}
+
+.header_input--button {
+    width: 60px;
+    height: 40px;
+    border: 1px solid #8f8f8f;
+    border-left: none;
+    border-radius: 0 2px 2px 0; /*입력창과 붙어있는 부분이 매끈해야 함(둥글게)*/
+}
+
+.header_end {
+    display: flex;
+}
+
+.header_search {
+    display: none;     /*돋보기는 처음에 안보이고 화면이 좁아지면 보여야 함*/
+    margin-right: 5px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+
+.header_profile {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #eaeaea;
+    border-radius: 50%;
+    background-color: rgb(149, 195, 149);
+}
+
+@media screen and (max-width : 800px) {
+    .header_title {
+        display: none; /*너비가 800 이하일 때 YunTube라는 타이틀을 안 보이게 함*/
+    } 
+}
+
+@media screen and (max-width : 400px) {
+    .header_center {
+        display: none; /*너비가 800 이하일 때 YunTube라는 타이틀을 안 보이게 함*/
+    } 
+    .header_search {
+        display: block; /*header_end는 플렉스 박스를 만들었기 대문에 그 안에서 일차원 정렬이 됨*/
+    }
+}

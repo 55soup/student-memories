@@ -1,0 +1,49 @@
+/*왼쪽 세로형 네비개이션바 작성!!*/
+
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10; /*header z index = 20, 둘이 겹치면 header가 우선적으로 먼저 보임!!!*/
+}
+
+.nav_wrapper {
+    min-width: 200px; /*아무리 작아도 200px 정도는 되어야 함*/
+    min-height: 100vh; /*화면 높이만큼은 높이를 차지하고 있어야 함. 최소한 그만큼 되어야 함!!*/
+    background-color: #f8f8f8;
+    padding: 80px 0 0 0;
+    list-style: none; /*리스트 스타일 기호 X*/
+}
+
+.nav_wrapper li {
+    display: flex; /*일차원적인 배열*/
+    padding: 10px 16px 10px;
+}
+
+.nav_wrapper li:hover {
+    cursor: pointer;
+    background-color: #eaeaea;
+}
+
+.nav_icon {
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+
+.nav_menu {
+    margin: 0 0 0 8px; /*왼쪽에 살짝*/
+    width: 100%;
+    border: none;
+    font-size: 1.2rem;
+    background-color: transparent;
+}
+
+@media screen and (max-width : 800px){ /*800px 이하이면 menu 안 보이게*/
+    .nav_menu {
+    display: none;
+    }
+    .nav_wrapper {
+    min-width: 0; /*nav_wrapper의 최소값은 200인데 0이 되면 최소값이 없어지는 것. 콘텐츠만큼만 차지함!*/
+    }
+}

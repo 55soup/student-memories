@@ -8,7 +8,7 @@ html {
 
 body {
     margin : 0;
-    margin-bottom: 100000px;
+    margin-bottom: 1000px;
 }
 
 /*네비게이션 바================================================*/
@@ -52,7 +52,7 @@ body {
 }
 
 .img {
-    width : 40%;
+    max-width : 80%; /*200px 보다 클 수 없다.*/
 }
 
 .bestPhoto .img {
