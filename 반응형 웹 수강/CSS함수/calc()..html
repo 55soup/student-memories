@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--함수란, 주어진 인수에 따라 정해진 값을 일컫는데 CSS의 속성값을 지정할 때도 사용 가능-->
+    <!--CSS 함수 : 괄호 안에 인수를 전달하면 인수에 따른 결과값을 속성에 적용-->
+    <!--calc() 함수 : width : calc(30px - 20px), 계산식의 결과를 속성값으로 지정, 표현식 사용-->
+
+    <style>
+        .message {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            padding: 0.5em;
+            border: 1px solid green;
+            font-size: 1.5em;
+        }
+        .message_text { /*calc 를 사용하여 가변적으로 만들기!*/
+            width: calc(100% - 100px);
+            height: 100%;
+            border: none;
+            resize: none;
+        }
+        .message_text:focus {
+            outline: none;
+        }
+        .message_send { /*전송버튼 크기가 늘어나니 예쁘지 않음 20% 일 때*/
+            width: 100px;
+            height: 100%;
+            border-radius: 8px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class = "message">
+        <textarea class = "message_text"></textarea>
+        <button class = "message_send">전송</button>
+    </div>
+</body>
+</html>
