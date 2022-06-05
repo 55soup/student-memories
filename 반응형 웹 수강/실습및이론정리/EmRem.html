@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--1.0 원상태 그대로라는 뜻, 기기의 너비에 맞게 초기 스케일을 잡겠다 = 뷰포트 기본 설정-->
+    <!--없애면 생기는 일 = 데스크탑 기준과 모바일 기준의 픽셀이 다르기 때문에 차이가 생김!
+        그런 차이를 극복하기 위해 사용하는 것이 meta 태그임!-->
+    <!--요약 : 기기에 따라 다른 화면 크기에 대응하기 위해 웹 문서 viewport 속성에 대한 마크업 추가!-->
+
+    <!--절대 길이 단위 px (어떤 상황에서도 동일한 값을 유지, 가변성 X)-->
+    <!--em, rem (박스에서 텍스트 크기 조정할 때 사용하는 상대 단위)
+        em = 부모 요소 글꼴 크기 / rem = 루트 요소의 글꼴 크기
+        루트 요소 글자 크기 기본값 : 16px / ex) 3rem이면 48픽셀 (3 * 16)-->
+
+    <!--em으로 내, 외부 여백 크기를 정할 때 부모 요소의 글꼴 크기가 아닌 자기 자신의 글자 크기를 기준으로 함!-->
+
+    <!--inline / block -->
+    <!--inline : 줄 속에 넣는 요소 / <b> <span> <a> 특정 문자열을 선택할 때 사용하는 태그 / 줄바꿈 X-->
+    <!--block : 더 넓은 범위 지정할 때 사용 / <p> <h1> <div> <ul> <ol> / block 요소 사용시 가로 화면 100% 차지 자동 앞뒤 줄바꿈-->
+    
+
+    <!--vw, vh / vmin, vmax-->
+    <!--뷰포트 크기를 기반으로 값을 계산하여 크기를 결정-->
+    <!--ex) font-size : 1vw : 뷰포트 너비의 100분의 1
+        ex) font-size : 1vh : 뷰포트 높이의 100분의 1-->
+    <!--ex) font-size : 1vmin : 뷰포트 높이와 너비 중 작은 쪽의 100분의 1
+        ex) font-size : 1vmax : 뷰포트 높이와 너비 중 큰 쪽의 100분의 1-->
+
+    
+
+    <title>em과 rem</title>
+
+    <style>
+        .outer {
+            font-size: 24px;  /*부모 요소의 폰트 사이즈를 inner가 상속받아 폰트 사이즈 24px로 됨*/
+        }
+        .inner {
+            /*font-size: 2em; /*부모 요소의 글꼴 크기, 1em은 24px, 2em은 48px*/
+            /*font-size: 1rem; /*html 요소의 글자 크기 (기본값 : 16px, 위에 px 기본값을 바꾸면 기본값 * n(rem))*/
+            font-size: 16px;
+            display: inline-block; /*요소는 inline, 내부는 block, 박스 모양이 inline처럼 옆으로 늘어섬*/
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            padding : 1rem;
+            margin : 1rem;
+            /*padding, margin 에서의 em은 자기 자신의 폰트 사이즈 기반을 두고 있음 (나의 폰트 사이즈 : 16px!)*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class = "outer">
+        <div class = "inner">고양이</div> 
+    </div>
+    </div>
+</body>
+</html>
