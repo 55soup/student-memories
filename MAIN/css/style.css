@@ -91,5 +91,6 @@ html {
       position: static;
       /*position: fixed; /*row 일 때 fixed가 되지만 col은 안돼서 추가!*/
       /*추가했더니 너무 불편함*/
+      /*Issue 해결 (closed)*/
     }
   }
