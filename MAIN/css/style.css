@@ -3,7 +3,7 @@ html {
   }
   
   * {
-    font-family: monospace;
+    font-family: Inter-Medium;
   }
   
   body {
@@ -35,7 +35,7 @@ html {
     text-decoration-color: #ffd874;
     /* border-bottom: 2px solid #ffd874; */
   }
-  
+
   .nav-item:hover {
     text-decoration: underline;
     /* background-color: rgb(94, 176, 94); */
