@@ -1,6 +1,9 @@
-# YunTube 제작
+# 6/3 ~ 6/5 반응형 웹 수강
 
 https://edu.goorm.io/lecture/30724/입문자를-위한-반응형-웹-기초-강의
+그 외 유튜브 강의 수강
+
+# YunTube 제작
 
 ![image](https://user-images.githubusercontent.com/87300199/172060331-1adbd28f-504a-43ad-9c74-0d87e8807f3f.png)
 
