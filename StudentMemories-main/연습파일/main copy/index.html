@@ -7,50 +7,20 @@
     <title>Student Memories</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <style>
-    header {
-      display: flex;
-    }
-    nav {
-      align-items: center;
-      display: flex;
-      flex-direction: row;
-    }
-    .left_bar {
-      display: flex;
-      justify-content: flex-end;
-    }
-    .right_bar {
-      display: flex;
-      justify-content: flex-end;
-    }
-    .nav-item {
-      list-style: none;
-      margin: 0 20px;
-    }
-  </style>
   <body>
     <script type="text/javascript" src="ex.js"></script>
 
-    <header>
-      <div class="logo nav_bar">추억 (간지ㄱ) 남</div>
-      <div class="left_bar nav_bar">
-        <nav class="nav_container">
-          <li class="nav-item"><a href="#BestPhoto">Best photo</a></li>
-          <li class="nav-item"><a href="#TodayPhoto">Today Photo</a></li>
-          <li class="nav-item"><a href="#Calandar">Calandar</a></li>
-          <li class="nav-item"><a href="#Footer">Footer</a></li>
-        </nav>
-      </div>
-      <div class="right_bar nav_bar">
-        <nav class="nav_container">
-          <li class="nav-item"><a href="#Album">Alnum</a></li>
-          <button class="nav-item">
-            <a href="#pick">사진 꾸미러 가기! ✨</a>
-          </button>
-        </nav>
-      </div>
-    </header>
+    <nav>
+      <ul class="nav-container" id="top">
+        <li class="nav-item"><a href="#top">추억 (간지ㄱ) 남</a></li>
+        <li class="nav-item"><a href="#BestPhoto">Best photo</a></li>
+        <li class="nav-item"><a href="#TodayPhoto">Today Photo</a></li>
+        <li class="nav-item"><a href="#Calandar">Calandar</a></li>
+        <li class="nav-item"><a href="#Footer">Footer</a></li>
+        <li class="nav-item"><a href="#Album">Alnum</a></li>
+        <li class="nav-item"><a href="#pick">사진 꾸미러 가기! ✨</a></li>
+      </ul>
+    </nav>
     <div class="photo">
       <section class="bestPhoto" id="BestPhoto">
         <p>Best Photo</p>
