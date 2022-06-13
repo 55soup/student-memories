@@ -4,6 +4,8 @@ html {
   
   * {
     font-family: Inter-Medium;
+    margin: 0 auto; /*중앙정렬*/
+    max-width: 1180px; /*최대크기*/
   }
   
   body {
@@ -90,7 +92,7 @@ html {
       flex-direction: column;
       position: static;
       /*position: fixed; /*row 일 때 fixed가 되지만 col은 안돼서 추가!*/
-      /*추가했더니 너무 불편함*/
+      /*추가했더니 불편함*/
       /*Issue 해결 (closed)*/
     }
   }
