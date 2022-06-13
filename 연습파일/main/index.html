@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Memories</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <style>
     header {
+      margin-top: 20px;
       display: flex; /*한 줄 정렬*/
+      align-items: center;
     }
     nav {
       align-items: center;
@@ -17,7 +20,9 @@
       flex-direction: row;
     }
     .left_bar {
+      margin-right: 80px;
       display: flex;
+      width: 100%;
       justify-content: flex-end;
     }
     .right_bar {
@@ -28,10 +33,21 @@
       list-style: none;
       margin: 0 20px;
     }
+    .btn_preety {
+      width: 150px;
+      height: 38px;
+      font-size: 12px;
+    }
+    .btn_menu {
+      display: none;s
+      border: none;
+      background-color: transparent;
+    }
+
+    @media screen and(max-width:768px) {
+    }
   </style>
   <body>
-    <script type="text/javascript" src="ex.js"></script>
-
     <header>
       <div class="logo nav_bar">추억 (간지ㄱ) 남</div>
       <div class="left_bar nav_bar">
@@ -45,9 +61,10 @@
       <div class="right_bar nav_bar">
         <nav class="nav_container">
           <li class="nav-item"><a href="#Album">Alnum</a></li>
-          <button class="nav-item">
+          <button class="nav-item btn_preety">
             <a href="#pick">사진 꾸미러 가기! ✨</a>
           </button>
+          <button class="btn_menu"><i data-feather="menu"></i></button>
         </nav>
       </div>
     </header>
@@ -81,4 +98,7 @@
 
     <footer class="main-footer" id="Footer"></footer>
   </body>
+  <script>
+    feather.replace();
+  </script>
 </html>

@@ -9,6 +9,7 @@ html {
 body {
   margin: 0;
   margin-bottom: 100000px;
+  box-sizing: border-box;
 }
 
 /*네비게이션 바================================================*/
