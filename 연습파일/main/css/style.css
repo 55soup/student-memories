@@ -42,7 +42,7 @@ nav a {
 nav > li > a:after {
   width: 0%;
   border-bottom: 1px solid var(--first-color);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;`
 }
 nav > li > a:hover:after {
   width: 100%;
