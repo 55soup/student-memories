@@ -4,6 +4,7 @@ html {
 
 * {
   font-family: 'Noto Sans KR', sans-serif;
+
 }
 
 :root {
@@ -21,6 +22,9 @@ header {
   margin: 20px 20px;
   display: flex; /*한 줄 정렬*/
   align-items: center;
+}
+.logo {
+  width: 30%;
 }
 .main_navbar {
   display: flex;
@@ -79,11 +83,11 @@ nav > li > a:hover:after {
 @media screen and (max-width: 768px) {
   .main_navbar {
     display: inline;
-    position: fixed;
+    position: fixed; /*메뉴바 고정*/
     top: 0;
     right: 0;
     height: 0;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 1); /*메뉴바 배경*/
     transform: translateX(100%);
     transition: all 0.3s ease-out 0s; /*transition(모든 요소, 0,3초 동안, 효과, 딜레이)*/
   }
@@ -96,9 +100,9 @@ nav > li > a:hover:after {
   }
   .nav_container {
     display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    margin-top: 80px;
+    flex-direction: column; /* 세로로 정렬*/
+    margin: 0 auto; /*가운데 정렬*/
+    margin-top: 80px; /*여백 주기*/
   }
   .nav_container li {
     margin: 20px;
