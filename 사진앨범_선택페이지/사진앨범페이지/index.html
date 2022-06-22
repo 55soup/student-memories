@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0 auto; /*중앙정렬*/
+      /* border: 1px solid red; */
+      max-width: 1180px; /*최대크기*/
+      font-family: ;
+    }
+    .album_name {
+      text-align: center;
+      padding: 150px 0;
+    }
+    select {
+      margin: unset; /*중앙정렬 해제*/
+      /* -webkit-appearance: none; 네이티브 외형 감추기 */
+    }
+    .sort_images {
+      display: flex;
+      justify-content: flex-end; /*오른쪽 정렬*/
+      padding: 5px;
+      margin-right: 15px;
+    }
+    .photo_wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .items_images {
+      width: 30%;
+      padding: 0 10px;
+    }
+    img {
+      max-width: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+      .items_images {
+        width: 40%;
+        padding: 0 10px;
+      }
+    }
+  </style>
+  <header>
+    <div class="logo">추억 간지ㄱ 남</div>
+  </header>
+  <div class="album_title">
+    <h3 class="album_name">윤영이의 라부라부 앨범</h3>
+  </div>
+  <div class="sort_images">
+    <select>
+      <option>내림차순</option>
+      <option>오름차순</option>
+    </select>
+  </div>
+  <body>
+    <div class="photo_wrapper">
+      <div class="items_images">
+        <img src="http://via.placeholder.com/380x250" />
+      </div>
+      <div class="items_images">
+        <img src="http://via.placeholder.com/380x250" />
+      </div>
+      <div class="items_images">
+        <img src="http://via.placeholder.com/380x250" />
+      </div>
+      <div class="items_images">
+        <img src="http://via.placeholder.com/380x250" />
+      </div>
+      <div class="items_images">
+        <img src="http://via.placeholder.com/380x250" />
+      </div>
+      <div class="items_images">
+        <img src="http://via.placeholder.com/380x250" />
+      </div>
+      <div class="items_images">
+        <img src="http://via.placeholder.com/380x250" />
+      </div>
+      <div class="items_images">
+        <img src="http://via.placeholder.com/380x250" />
+      </div>
+      <div class="items_images">
+        <img src="http://via.placeholder.com/380x250" />
+      </div>
+    </div>
+  </body>
+</html>
