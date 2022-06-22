@@ -40,15 +40,15 @@ nav a {
   /*nav바 안에 있는 모든 a태그의 밑줄 사라지게 하기*/
   text-decoration: none;
   color: #000000;
-  text-decoration-color: var(--first-color);
 }
-nav > li > a:after {
-  text-decoration: underline;
-  /* border-bottom: 1px solid var(--first-color); */
-  transition: all 0.2s ease-in-out;
-}
-nav > li > a:hover:after {
-  width: 100%;
+/* nav > li > a:after {
+  border-bottom: 1px solid var(--first-color); 
+  transition: all 0.2s ease-in-out; 
+}*/
+nav > li > a:hover {
+  /* text-decoration: underline;
+  text-decoration-color: var(--first-color); */
+  border-bottom: 2px solid var(--first-color);
 }
 .left_bar {
   margin-right: 3%;
@@ -86,7 +86,7 @@ nav > li > a:hover:after {
     display: inline;
     position: fixed; /*메뉴바 고정*/
     top: 0;
-    right: 0;
+    right: 0; /*메뉴바 오른쪽에서 나오게하기*/
     height: 0;
     background-color: rgba(255, 255, 255, 1); /*메뉴바 배경*/
     transform: translateX(100%);
