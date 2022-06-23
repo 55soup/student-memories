@@ -1,106 +1,102 @@
 * {
-    margin: 0 auto;
-    padding: 0;
-  }
+  margin: 0 auto;
+  padding: 0;
+}
 
-  :root {
-    --first-color: #ffd874;
-    --second-color: #ffdabf;
-  }
+:root {
+  --first-color: #ffd874;
+  --second-color: #ffdabf;
+}
 
-  header {
-    max-width: 1180px;
-    margin-bottom: 50px;
-    padding: 10px 0;
-  }
-  .container {
-    max-width: 880px;
-  }
-  .title {
-    display: flex;
-    border-bottom: 1px solid #000000;
-    padding: 10px 0;
-    margin: 10px 10px;
-  }
-  .title .inner {
-    display: block;
-    margin: 0 auto;
-    max-width: 880px;
-  }
-  .title .left-content {
-    float: left;
-  }
-  .title .right-content {
-    margin-left: 400px;
-    float: right;
-  }
-  button {
-    border-style: none;
-  }
-  .right-content .tip {
-    width: 95px;
-    height: 33px;
-    background-color: var(--first-color);
-  }
-  .photo {
-    max-width: 580px;
-    height: 400px;
-    margin-top: 20px;
-  }
+.logo {
+  background: url("../img/logo.png");
+}
+header {
+  max-width: 1180px;
+  margin-bottom: 50px;
+  padding: 10px 0;
+}
+.container {
+  max-width: 880px;
+}
+.title {
+  display: flex;
+  border-bottom: 1px solid #000000;
+  padding: 10px 0;
+  margin: 10px 10px;
+}
+.title .inner {
+  display: flex;
+  margin: 0 auto;
+  max-width: 880px;
+  column-gap: 35vw;
+}
+button {
+  border-style: none;
+}
+.tip {
+  width: 95px;
+  height: 33px;
+  background-color: var(--first-color);
+}
+.photo {
+  max-width: 580px;
+  height: 400px;
+  margin-top: 20px;
+}
 
-  /*파일 업로드 / 프리뷰*/
-  .upload-box {
-    width:100%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .upload-box .drag-file {
-    position: relative;
-    width: 100%;
-    height: 360px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border : 3px solid #2f2f2f2f;
-  }
-  .upload-box .drag-file.highlight {
-    border: 3px dashed var(--first-color);
-  }
-  .upload-box .drag-file .image {
-    width: 40px;
-  }
-  .upload-box .drag-file .message {
-    margin-bottom: 0;
-  }
-  .upload-box .drag-file .preview {
-    display: none;
-    position: absolute;
-    left: 0;
-    height: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
+/*파일 업로드 / 프리뷰*/
+.upload-box {
+  width: 94%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.upload-box .drag-file {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #2f2f2f2f;
+}
+.upload-box .drag-file.highlight {
+  border: 3px dashed var(--first-color);
+}
+.upload-box .drag-file .image {
+  width: 40px;
+}
+.upload-box .drag-file .message {
+  margin-bottom: 0;
+}
+.upload-box .drag-file .preview {
+  display: none;
+  position: absolute;
+  left: 0;
+  height: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
-
-  .icon-content {
-    max-width: 380px;
-  }
-  .retouch {
-    display: flex;
-    margin: 50px 0;
-    justify-content: center;
-    align-items: center;
-  }
-  /* .retouch .icon {
-    /* padding: 0 15px; 
-  }*/
-  .save-btn {
-    float: right;
-  }
-  .save-btn > button {
-    width: 144px;
-    height: 43px;
-  }
+.icon-content {
+  max-width: 380px;
+}
+.retouch {
+  display: flex;
+  margin: 50px 0;
+  justify-content: center;
+  align-items: center;
+}
+/* .retouch .icon {
+  /* padding: 0 15px; 
+}*/
+.save-btn {
+  float: right;
+}
+.save-btn > button {
+  width: 144px;
+  height: 43px;
+}
