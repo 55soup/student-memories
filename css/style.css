@@ -20,9 +20,14 @@ body {
 
 /*네비게이션 바================================================*/
 header {
-  margin: 20px 20px;
+  height: 80px;
   display: flex; /*한 줄 정렬*/
   align-items: center;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white;
 }
 .logo {
   width: 30%;
@@ -40,15 +45,15 @@ nav a {
   /*nav바 안에 있는 모든 a태그의 밑줄 사라지게 하기*/
   text-decoration: none;
   color: #000000;
+  text-decoration-color: var(--first-color);
 }
-/* nav > li > a:after {
-  border-bottom: 1px solid var(--first-color); 
-  transition: all 0.2s ease-in-out; 
-}*/
-nav > li > a:hover {
-  /* text-decoration: underline;
-  text-decoration-color: var(--first-color); */
-  border-bottom: 2px solid var(--first-color);
+nav > li > a:after {
+  text-decoration: underline;
+  /* border-bottom: 1px solid var(--first-color); */
+  transition: all 0.2s ease-in-out;
+}
+nav > li > a:hover:after {
+  width: 100%;
 }
 .left_bar {
   margin-right: 3%;
@@ -82,12 +87,15 @@ nav > li > a:hover {
 }
 
 @media screen and (max-width: 768px) {
+  header {
+    height: 68px;
+    background-color: rgba(255, 255, 255, 1);
+  }
   .main_navbar {
     display: inline;
     position: fixed; /*메뉴바 고정*/
     top: 0;
-    right: 0; /*메뉴바 오른쪽에서 나오게하기*/
-    height: 0;
+    right: 0;
     background-color: rgba(255, 255, 255, 1); /*메뉴바 배경*/
     transform: translateX(100%);
     transition: all 0.3s ease-out 0s; /*transition(모든 요소, 0,3초 동안, 효과, 딜레이)*/
@@ -146,7 +154,6 @@ nav > li > a:hover {
   margin-bottom: 10%;
 }
 /* .photo .todayPhoto {
-
 } */
 .photo .calandar {
   margin-top: 10%;
@@ -155,3 +162,20 @@ nav > li > a:hover {
 /*베스트 포토, 투데이 포토================================================*/
 
 /*footer*/
+======= html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+:root {
+  --first-color: #ffd874;
+  --second-color: #ffdabf;
+}
+body {
+  margin: 0;
+  margin-bottom: 5000px;
+  box-sizing: border-box;
+}
