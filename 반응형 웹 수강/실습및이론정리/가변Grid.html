@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가변 레이아웃</title>
+    <!--비율에 기반한 크기 조절-->
+    <!--em을 이용해 상대적인 크기의 폰트를 적용할 때처럼, 레이아웃에도 비율에 기반한 개념 적용 가능-->
+    <!--부모 요소 크기에 비례해 자식 요소의 크기가 변하는 방식은 가변 레이아웃 만들 때 흔히 사용-->
+    
+    <!-- % (퍼센테이지) -->
+    <!--백분율 값 : 보통 부모 요소와 상대적 크기를 지정할 때 사용 / 너비, 높이, 여백 뿐아니라 글 크기에도 사용 가능-->
+    <!-- ex) font-size : 50% (부모 요소의 글자 크기가 100%)-->
+
+    <!--비율 계산 기반으로 변화하는 가변 레이아웃에는 % 주로 사용-->
+    <!--너비와 여백은 부모 요소의 너비에 비례해 계산. 높이, 글자도 동일-->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container { /* 가로가 960 이하면 잘림! 고정 가변 레이아웃을 만들어야 함*/
+            width: 90%; /*body의 90% 차지*/
+            margin : 0 auto;
+            text-align: center;
+        }
+        .header { /*container의 자식*/
+            width: 100%; /*영역의 90%를 유지!!!!*/
+            height: 100px;
+            background-color: tomato;
+        }
+        .main {
+            float : left;
+            width: 67%; /*960에서 640은 몇 %인가? = 640 / 960 = 66.66666%*/
+            height: 300px;
+            background-color: orange;
+            padding :10%;
+        }
+        .aside {
+            float: right; /*float = 뜨다 / 오른쪽으로 뜨게 하다*/
+            width: 33%; /*main의 px은 640이고 aside는 320인 1/2이기 때문에 67%의 1/2인 33%!*/
+            height: 300px;
+            background-color: purple;
+            padding :10%;
+        }
+        .footer {
+            clear: both; /*float의 효과를 받지 않겠다! 왼쪽, 오른쪽 둘다(both)*/
+            width: 100%;
+            height: 100px;
+            background-color: violet;
+        }
+    </style>
+
+</head>
+<body>
+    <div class = "container">
+        <div class = "header">HEADER</div>
+        <div class = "main">MAIN</div>
+        <div class = "aside">ASIDE</div>
+        <div class ="footer">FOOTER</div>
+    </div>
+</body>
+</html>

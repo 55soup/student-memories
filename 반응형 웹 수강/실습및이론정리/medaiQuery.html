@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--미디어 쿼리 :
+    @media 미디어_타입 and (조건에 대한 물음) {
+        미디어 타입과 조건을 모두 만족할 때 덮어씌울 스타일 선언문
+    }}-->
+
+    <!--@media screen and (max-width : 768px) {
+        화면 screen의 너비가 768px 이하일 경우
+        여기에 정으디ㅚㄴ 스타일 선언문을 추가 적용할 것이다.
+    }-->
+
+    <!--link 태그와 @import 에 미디어 쿼리를 추가할 수 있다.-->
+
+    <style>
+        .img {
+            background-color: aqua;
+            width : 200px;
+            height: 200px;
+        }
+
+        @media screen and  (max-width: 800px) { /* max-width : 800px (800이하)*/
+            .img {
+                width: 300px;
+                height: 500px;
+            }
+        }
+        @media screen and (min-width : 1200px) { /*min-width : 1200px (1200이상)*/
+            .img {
+                width: 800px;
+                height: 800px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class = "img"></div>
+</body>
+</html>
