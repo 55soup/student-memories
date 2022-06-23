@@ -7,13 +7,11 @@
   --first-color: #ffd874;
   --second-color: #ffdabf;
 }
-
 .logo {
-  background: url("../img/logo.png");
+  width: 15%;
 }
 header {
   max-width: 1180px;
-  margin-bottom: 50px;
   padding: 10px 0;
 }
 .container {
@@ -38,6 +36,7 @@ button {
   width: 95px;
   height: 33px;
   background-color: var(--first-color);
+  cursor: pointer;
 }
 .photo {
   max-width: 580px;
@@ -99,4 +98,36 @@ button {
 .save-btn > button {
   width: 144px;
   height: 43px;
+}
+
+
+.speech-bubble {
+  position: relative;
+  background: #ffffff;
+  border-radius: .4em;
+  font-size: 14px;
+  display: none;
+  width: 200px;
+  padding : 8px;
+  border: 1px solid #ffd874;
+  
+}
+
+.speech-bubble:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 25px solid transparent;
+  border-top-color: #ffffff;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -12.5px;
+  margin-bottom: -25px;
+}
+
+button:hover + p.speech-bubble {
+  display: block;
 }
