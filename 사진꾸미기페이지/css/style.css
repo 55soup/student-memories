@@ -151,6 +151,6 @@ img { /*div > img*/
   height: 50px;
 }
 
-div > i > :nth-child(2):hover {
-  background-color: #ffd874;
+div > i:nth-child(2):hover {
+  cursor: move;
 }
