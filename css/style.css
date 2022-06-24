@@ -135,9 +135,7 @@ nav > li > a:hover:after {
 /*베스트 포토, 투데이 포토================================================*/
 
 .photo {
-  margin-top: 15%;
-  margin-bottom: 15%;
-  text-align: center;
+  margin-top: 250px;  text-align: center;
 }
 
 .img {
@@ -162,10 +160,7 @@ nav > li > a:hover:after {
 }
 
 /*베스트 포토, 투데이 포토================================================*/
-
-<<<<<<< HEAD
-/*footer*/
-======= html {
+html {
   scroll-behavior: smooth;
 }
 

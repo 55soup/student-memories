@@ -45,6 +45,7 @@ button {
   cursor: pointer;
   text-align: center;
 }
+
 .photo {
   max-width: 580px;
   height: 400px;
@@ -113,25 +114,24 @@ button {
   height: 43px;
 }
 
-
 .speech-bubble {
   position: absolute; /* 공중에 띄우기 / 절대 위치 / 후에 부모 엘리먼트 위에 겹쳐서 배치하기 위해*/
   background: #ffffff;
-  border-radius: .4em;
+  border-radius: 0.4em;
   font-size: 14px;
   display: none;
   width: 200px;
-  padding : 8px;
+  padding: 8px;
   border: 1px solid #ffd874;
-  top: -100px; /* 위로 올리기 */
-  padding : 10px 10px;
+  top: -150px; /* 위로 올리기 */
+  padding: 10px 10px;
 }
 
 .speech-bubble::after {
-  content: '';
+  content: "";
   position: relative; /* 상대 위치 */
   bottom: 0;
-  left: -55%;
+  left: -15%;
   width: 0;
   height: 0;
   top: 39px;
@@ -139,16 +139,22 @@ button {
   border-top-color: #ffd874;
   /* border-left: 10px solid transparent;
   border-bottom: 0px solid transparent; */
-
   margin-left: -10px;
 }
-
-button:hover + p.speech-bubble {
+img {
+  /*div > img*/
+  width: 50px;
+  height: 50px;
+}
+div > i:nth-child(2):hover {
+  cursor: move;
+}
+button:hover + .speech-bubble {
   display: block;
 }
 
-@media screen and (max-width: 768px){
-  .title .inner{
+@media screen and (max-width: 768px) {
+  .title .inner {
     column-gap: 49vw;
   }
   .save-btn {
