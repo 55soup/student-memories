@@ -7,14 +7,13 @@
   --first-color: #ffd874;
   --second-color: #ffdabf;
 }
-
 .logo {
-  background: url("../img/logo.png");
+  width: 15%;
 }
 header {
   max-width: 1180px;
-  margin-bottom: 50px;
   padding: 10px 0;
+  margin-bottom: 70px;
 }
 .container {
   max-width: 880px;
@@ -34,15 +33,27 @@ header {
 button {
   border-style: none;
 }
+
+.tooi-tip {
+  position: absolute;
+}
+
 .tip {
   width: 95px;
   height: 33px;
   background-color: var(--first-color);
+  cursor: pointer;
+  text-align: center;
 }
 .photo {
   max-width: 580px;
   height: 400px;
   margin-top: 20px;
+}
+
+.tool-tip {
+  position: relative;
+  display: inline-block;
 }
 
 /*파일 업로드 / 프리뷰*/
@@ -99,4 +110,38 @@ button {
 .save-btn > button {
   width: 144px;
   height: 43px;
+}
+
+
+.speech-bubble {
+  position: absolute; /* 공중에 띄우기 / 절대 위치 / 후에 부모 엘리먼트 위에 겹쳐서 배치하기 위해*/
+  background: #ffffff;
+  border-radius: .4em;
+  font-size: 14px;
+  display: none;
+  width: 200px;
+  padding : 8px;
+  border: 1px solid #ffd874;
+  top: -100px; /* 위로 올리기 */
+  padding : 10px 10px;
+}
+
+.speech-bubble::after {
+  content: '';
+  position: relative; /* 상대 위치 */
+  bottom: 0;
+  left: -55%;
+  width: 0;
+  height: 0;
+  top: 39px;
+  border: 10px solid transparent;
+  border-top-color: #ffd874;
+  /* border-left: 10px solid transparent;
+  border-bottom: 0px solid transparent; */
+
+  margin-left: -10px;
+}
+
+button:hover + p.speech-bubble {
+  display: block;
 }
