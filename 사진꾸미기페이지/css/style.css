@@ -28,7 +28,7 @@ header {
   display: flex;
   margin: 0 auto;
   max-width: 880px;
-  column-gap: 35vw;
+  column-gap: 32vw;
 }
 button {
   border-style: none;
@@ -106,6 +106,7 @@ button {
 }*/
 .save-btn {
   float: right;
+  margin-right: 26vw;
 }
 .save-btn > button {
   width: 144px;
@@ -144,4 +145,13 @@ button {
 
 button:hover + p.speech-bubble {
   display: block;
+}
+
+@media screen and (max-width: 768px){
+  .title .inner{
+    column-gap: 49vw;
+  }
+  .save-btn {
+    margin-right: 3vw;
+  }
 }
