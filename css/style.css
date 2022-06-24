@@ -44,17 +44,13 @@ nav {
 }
 nav a {
   /*nav바 안에 있는 모든 a태그의 밑줄 사라지게 하기*/
-  text-decoration: none;
-  color: #000000;
-  text-decoration-color: var(--first-color);
+  text-decoration: none; /* anchor태그가 가지고 있는 기본 속성 없애기*/
+  color: #000000; /* 글자 색 검정*/
 }
-nav > li > a:after {
-  text-decoration: underline;
-  /* border-bottom: 1px solid var(--first-color); */
-  transition: all 0.2s ease-in-out;
-}
-nav > li > a:hover:after {
-  width: 100%;
+nav a:hover {
+  border-bottom: solid var(--first-color); /* hover일 때 밑줄 생기도록 */
+  /* text-decoration: underline;
+  text-decoration-color: var(--first-color); */
 }
 .left_bar {
   margin-right: 3%;
@@ -135,7 +131,8 @@ nav > li > a:hover:after {
 /*베스트 포토, 투데이 포토================================================*/
 
 .photo {
-  margin-top: 250px;  text-align: center;
+  margin-top: 250px;
+  text-align: center;
 }
 
 .img {
