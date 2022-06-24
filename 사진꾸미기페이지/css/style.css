@@ -34,10 +34,6 @@ button {
   border-style: none;
 }
 
-.tooi-tip {
-  position: absolute;
-}
-
 .tip {
   width: 95px;
   height: 33px;
@@ -45,7 +41,15 @@ button {
   cursor: pointer;
   display: flex;
   text-align: center;
+  float: left;
 }
+
+body > div > div.title > div > div > img {
+  position: absolute;
+  top: -200px;
+  
+}
+
 .photo {
   max-width: 580px;
   height: 400px;
@@ -125,7 +129,9 @@ button {
   border: 1px solid #ffd874;
   top: -100px; /* 위로 올리기 */
   padding : 10px 10px;
+  
 }
+
 
 .speech-bubble::after {
   content: '';
@@ -143,6 +149,6 @@ button {
   margin-left: -10px;
 }
 
-button:hover + p.speech-bubble {
+button:hover + .speech-bubble {
   display: block;
 }
