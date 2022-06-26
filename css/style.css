@@ -135,7 +135,7 @@ button:hover {
   background-color: var(--first-color);
   position: absolute;
   left: 24vw;
-  top: 258px;
+  top: 268px;
 }
 section > div {
   /*section 바로 아래있는 div, (타이틀들)*/
@@ -160,10 +160,9 @@ section > div {
 /* footer */
 .main-footer {
   display: flex;
-  position: absolute;
-  left: 23vw;
   padding-top: 10px;
   border-top: 1px solid black;
+  width: 100%;
 }
 .main-footer li {
   display: inline;
@@ -172,6 +171,7 @@ section > div {
   font-size: 20px;
 }
 .developerFooter {
+  margin-left: 23vw;
   margin-right: 40px;
 }
 a:visited {
