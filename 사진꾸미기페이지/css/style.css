@@ -159,6 +159,10 @@ button {
 }*/
 .save-btn {
   float: right;
+<<<<<<< HEAD
+=======
+  /* margin-right: 26vw; */
+>>>>>>> origin/sunjo
 }
 .save-btn > button {
   width: 144px;
@@ -203,6 +207,7 @@ div > i:nth-child(2):hover {
 button:hover + .speech-bubble {
   display: block;
 }
+<<<<<<< HEAD
 
 .speech-bubble img { /*div > img*/
   width: 50px;
@@ -255,5 +260,16 @@ button:hover + .speech-bubble {
 @media screen and (min-width: 668px) {
   .no {
     display: none;
+=======
+Button:hover {
+  opacity: 0.6;
+}
+@media screen and (max-width: 768px) {
+  .title .inner {
+    column-gap: 49vw;
+  }
+  .save-btn {
+    margin-right: 3vw;
+>>>>>>> origin/sunjo
   }
 }

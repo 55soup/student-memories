@@ -1,3 +1,19 @@
+/* 로컬 세이브 구현 */ /////
+const saveBtn = document.querySelector("#jsSave");
+const canvas = document.getElementById("canvas");
+
+function handleSaveClick() {
+  const image = canvas.toDataURL("");
+  const link = document.createElement("a");
+  link.href = image;
+  link.download = "다운로드";
+  link.click();
+}
+if (saveBtn) {
+  saveBtn.addEventListener("click", handleSaveClick);
+}
+/* 로컬 세이브 구현 */
+
 function DropFile(dropAreaId, fileListId) {
   let dropArea = document.getElementById(dropAreaId);
   let fileList = document.getElementById(fileListId);
