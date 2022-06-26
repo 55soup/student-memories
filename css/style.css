@@ -16,6 +16,9 @@ body {
   box-sizing: border-box;
 }
 
+section {
+  margin-bottom: 400px;
+}
 /*네비게이션 바================================================*/
 header {
   height: 64px;
@@ -96,10 +99,7 @@ button:hover {
   border: none;
   background-color: transparent;
 }
-.bestPhotoTitle {
-  position: absolute;
-  left: 24vw;
-}
+/*베스트 포토, 투데이 포토================================================*/
 .highlight {
   width: 148px;
   height: 33px;
@@ -109,9 +109,11 @@ button:hover {
   left: 24vw;
   top: 265px;
 }
-/*베스트 포토, 투데이 포토================================================*/
 section > div {
+  /*section 바로 아래있는 div, (타이틀들)*/
   font-size: 25px;
+  position: absolute;
+  left: 24vw;
 }
 .photo {
   margin-top: 250px;
@@ -130,9 +132,6 @@ section > div {
   font-size: 20px;
 }
 
-.photo .bestPhoto {
-  margin-bottom: 10%;
-}
 /* .photo .todayPhoto {
 } */
 .photo .calandar {
@@ -141,7 +140,10 @@ section > div {
 
 /*footer*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
+  .logo {
+    width: 26%;
+  }
   header {
     height: 68px;
     background-color: rgba(255, 255, 255, 1);
@@ -182,5 +184,19 @@ section > div {
     height: 40px;
     transition: 0.3s;
     position: fixed;
+  }
+
+  /* bestphoto 섹션 */
+  section > div {
+    font-size: 10px;
+    position: absolute;
+    left: 24vw;
+  }
+  .highlight {
+    width: 74px;
+    height: 16px;
+    position: absolute;
+    left: 24vw;
+    top: 265px;
   }
 }

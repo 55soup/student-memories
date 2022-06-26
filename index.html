@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slide.css" />
     <!-- <script src="https://unpkg.com/feather-icons"></script> -->
     <!--아이콘 가져오기-->
     <link
@@ -50,12 +51,63 @@
     </header>
     <div class="photo">
       <section class="bestPhoto" id="BestPhoto">
-        <div class="bestPhotoTitle">Best Photo</div>
+        <div>Best Photo</div>
         <div class="highlight"></div>
-        <img
-          src="https://indigo.co.kr/web/product/medium/201702/7476_shop1_514794.jpg"
-          class="img"
-        />
+        <br />
+        <div class="slidebox">
+          <input type="radio" name="slide" class="slide" id="slide01" checked />
+          <input type="radio" name="slide" class="slide" id="slide02" />
+          <input type="radio" name="slide" class="slide" id="slide03" />
+          <input type="radio" name="slide" class="slide" id="slide04" />
+          <ul class="slidelist">
+            <li class="slideitem">
+              <a><img src="./img/slide01.jpg" /></a>
+            </li>
+            <li class="slideitem">
+              <a><img src="./img/slide02.jpg" /></a>
+            </li>
+            <li class="slideitem">
+              <a><img src="./img/slide03.jpg" /></a>
+            </li>
+            <li class="slideitem">
+              <a><img src="./img/slide04.jpg" /></a>
+            </li>
+          </ul>
+          <div class="slide-control">
+            <div class="control01">
+              <label for="slide04" class="prev"
+                ><i class="bx bx-chevron-left"></i
+              ></label>
+              <label for="slide02" class="next"
+                ><i class="bx bx-chevron-right"></i
+              ></label>
+            </div>
+            <div class="control02">
+              <label for="slide01" class="prev"
+                ><i class="bx bx-chevron-left"></i
+              ></label>
+              <label for="slide03" class="next"
+                ><i class="bx bx-chevron-right"></i
+              ></label>
+            </div>
+            <div class="control03">
+              <label for="slide02" class="prev"
+                ><i class="bx bx-chevron-left"></i
+              ></label>
+              <label for="slide04" class="next"
+                ><i class="bx bx-chevron-right"></i
+              ></label>
+            </div>
+            <div class="control04">
+              <label for="slide03" class="prev"
+                ><i class="bx bx-chevron-left"></i
+              ></label>
+              <label for="slide01" class="next"
+                ><i class="bx bx-chevron-right"></i
+              ></label>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section calss="todayPhoto" id="TodayPhoto">
