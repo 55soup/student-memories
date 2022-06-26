@@ -105,12 +105,10 @@ button:hover {
   border: none;
   background-color: transparent;
 }
-<<<<<<< HEAD
 .bestPhotoTitle {
   position: absolute;
   left: 24vw;
 }
-=======
 /*베스트 포토, 투데이 포토================================================*/
 .highlight {
   width: 148px;
@@ -131,7 +129,6 @@ section > div {
   margin-top: 250px;
   text-align: center;
 }
->>>>>>> origin/sunjo
 
 .img {
   width: 40%;
@@ -216,10 +213,7 @@ a:visited {
     transition: 0.3s;
     position: fixed;
   }
-<<<<<<< HEAD
 }
-=======
->>>>>>> origin/sunjo
 
   /* bestphoto 섹션 */
   section > div {
@@ -244,8 +238,6 @@ a:visited {
     position: static;
     margin: 10px;
   }
-}
-<<<<<<< HEAD
 
 .img {
   width: 40%;
@@ -270,5 +262,3 @@ a:visited {
 
 
 /*footer*/
-=======
->>>>>>> origin/sunjo
