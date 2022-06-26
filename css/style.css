@@ -90,6 +90,10 @@ nav a:hover:after {
   border: none;
   background-color: transparent;
 }
+.bestPhotoTitle {
+  position: absolute;
+  left: 24vw;
+}
 
 @media screen and (max-width: 768px) {
   header {
