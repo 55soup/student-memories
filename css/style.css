@@ -28,6 +28,7 @@ header {
   background-color: white;
   margin: 0;
   padding: 16px;
+  z-index: 100;
 }
 .logo {
   width: 38%;
@@ -60,6 +61,11 @@ nav a:hover:after {
   /* text-decoration: underline;
   text-decoration-color: var(--first-color); */
 }
+
+button:hover {
+  cursor: pointer;
+}
+
 .left_bar {
   margin-right: 3%;
   display: flex;
@@ -94,6 +100,46 @@ nav a:hover:after {
   position: absolute;
   left: 24vw;
 }
+.highlight {
+  width: 148px;
+  height: 33px;
+  z-index: -1;
+  background-color: var(--first-color);
+  position: absolute;
+  left: 24vw;
+  top: 265px;
+}
+/*베스트 포토, 투데이 포토================================================*/
+section > div {
+  font-size: 25px;
+}
+.photo {
+  margin-top: 250px;
+  text-align: center;
+}
+
+.img {
+  width: 40%;
+}
+
+.bestPhoto .img {
+  overflow: auto;
+}
+
+.photo p:nth-child(1) {
+  font-size: 20px;
+}
+
+.photo .bestPhoto {
+  margin-bottom: 10%;
+}
+/* .photo .todayPhoto {
+} */
+.photo .calandar {
+  margin-top: 10%;
+}
+
+/*footer*/
 
 @media screen and (max-width: 768px) {
   header {
@@ -138,52 +184,3 @@ nav a:hover:after {
     position: fixed;
   }
 }
-/*네비게이션 바================================================*/
-
-/*베스트 포토, 투데이 포토================================================*/
-
-.photo {
-  margin-top: 250px;
-  text-align: center;
-}
-
-.img {
-  width: 40%;
-}
-
-.bestPhoto .img {
-  overflow: auto;
-}
-
-.photo p:nth-child(1) {
-  font-size: 20px;
-}
-
-.photo .bestPhoto {
-  margin-bottom: 10%;
-}
-/* .photo .todayPhoto {
-} */
-.photo .calandar {
-  margin-top: 10%;
-}
-
-/*베스트 포토, 투데이 포토================================================*/
-html {
-  scroll-behavior: smooth;
-}
-
-* {
-  font-family: "Noto Sans KR", sans-serif;
-}
-
-:root {
-  --first-color: #ffd874;
-  --second-color: #ffdabf;
-}
-body {
-  margin: 0;
-  margin-bottom: 5000px;
-  box-sizing: border-box;
-}
-/*footer*/
