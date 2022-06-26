@@ -104,10 +104,7 @@ input[type="radio"]:checked {
     display: inline;
     margin-bottom: 14px;
   }
-  .prev {
-    /* 양쪽 버튼 안보이게 하기*/
-    display: none;
-  }
+  .prev,
   .next {
     /* 양쪽 버튼 안보이게 하기*/
     display: none;
