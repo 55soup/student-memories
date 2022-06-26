@@ -15,10 +15,9 @@ li {
 .slidebox {
   max-width: 700px;
   margin: 0 auto;
-  position: relative;
+  position: static;
   width: 100%;
-  top: 150px;
-  left: 48px;
+  margin-top: 100px;
 }
 .slidebox .slidelist {
   position: relative;
@@ -44,7 +43,7 @@ li {
 }
 
 .slidebox .slide-control [class*="control"] label {
-  position: absolute;
+  position: static;
   z-index: 10;
   top: 50%;
   transform: translateY(-50%);
@@ -95,7 +94,16 @@ li {
 input[type="radio"]:checked {
   background-color: var(--first-color);
 }
-
+.image-box {
+  width: 700px;
+  height: 455px;
+  overflow: hidden;
+}
+.image-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 @media screen and (max-width: 1000px) {
   .slidebox {
     width: 64%;
