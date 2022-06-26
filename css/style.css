@@ -34,9 +34,6 @@ section {
   font-size: 20px;
 }
 
-.photo .bestPhoto {
-  margin-bottom: 43%;
-}
 /* .photo .todayPhoto {
 } */
 .photo .calandar {
@@ -155,6 +152,18 @@ section > div {
 } */
 .photo .calandar {
   margin-top: 10%;
+}
+.todayPhoto-box {
+  width: 30.33%;
+  height: 30.33%;
+  overflow: hidden;
+  position: static;
+  margin-left: 32vw;
+}
+.todayPhoto-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* footer */
