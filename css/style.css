@@ -52,6 +52,11 @@ nav a:hover {
   /* text-decoration: underline;
   text-decoration-color: var(--first-color); */
 }
+
+button:hover {
+  cursor: pointer;
+}
+
 .left_bar {
   margin-right: 3%;
   display: flex;
@@ -157,21 +162,5 @@ nav a:hover {
 }
 
 /*베스트 포토, 투데이 포토================================================*/
-html {
-  scroll-behavior: smooth;
-}
 
-* {
-  font-family: "Noto Sans KR", sans-serif;
-}
-
-:root {
-  --first-color: #ffd874;
-  --second-color: #ffdabf;
-}
-body {
-  margin: 0;
-  margin-bottom: 5000px;
-  box-sizing: border-box;
-}
 /*footer*/
