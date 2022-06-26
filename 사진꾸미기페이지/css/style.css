@@ -87,7 +87,6 @@ button {
 
 .retouch .icon:hover {
   cursor: wait;
-  
 }
 
 .tip {
@@ -204,19 +203,9 @@ div > i:nth-child(2):hover {
 button:hover + .speech-bubble {
   display: block;
 }
-<<<<<<< HEAD
-Button:hover {
-  opacity: 0.6;
-}
-@media screen and (max-width: 768px) {
-  .title .inner {
-    column-gap: 49vw;
-  }
-  .save-btn {
-    margin-right: 3vw;
-=======
 
-.speech-bubble img { /*div > img*/
+.speech-bubble img {
+  /*div > img*/
   width: 50px;
   height: 50px;
 }
@@ -267,6 +256,10 @@ Button:hover {
 @media screen and (min-width: 668px) {
   .no {
     display: none;
->>>>>>> origin/yunyoung
   }
+}
+
+Button:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }
