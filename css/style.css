@@ -38,6 +38,11 @@ header {
   width: 38%;
   background-size: contain;
 }
+
+.logo:hover {
+  cursor: pointer;
+}
+
 .main_navbar {
   display: flex;
   width: 100%;
@@ -119,6 +124,10 @@ section > div {
 .photo {
   margin-top: 250px;
   text-align: center;
+}
+.bestPhotoTitle {
+  position: absolute;
+  left: 24vw;
 }
 
 .img {
@@ -204,6 +213,10 @@ a:visited {
     transition: 0.3s;
     position: fixed;
   }
+<<<<<<< HEAD
+=======
+}
+>>>>>>> origin/yunyoung
 
   /* bestphoto 섹션 */
   section > div {
@@ -229,3 +242,30 @@ a:visited {
     margin: 10px;
   }
 }
+<<<<<<< HEAD
+=======
+
+.img {
+  width: 40%;
+}
+
+.bestPhoto .img {
+  overflow: auto;
+}
+
+.photo p:nth-child(1) {
+  font-size: 20px;
+}
+
+.photo .bestPhoto {
+  margin-bottom: 10%;
+}
+/* .photo .todayPhoto {
+} */
+.photo .calandar {
+  margin-top: 10%;
+}
+
+
+/*footer*/
+>>>>>>> origin/yunyoung

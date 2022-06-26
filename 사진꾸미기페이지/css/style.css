@@ -1,23 +1,70 @@
 * {
   margin: 0 auto;
   padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 :root {
   --first-color: #ffd874;
   --second-color: #ffdabf;
 }
-.logo {
-  width: 15%;
-}
+
 header {
-  max-width: 1180px;
-  padding: 10px 0;
-  margin-bottom: 70px;
+  height: 64px;
+  display: flex; /*한 줄 정렬*/
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  margin: 0;
+  padding: 16px;
 }
+
+.nav_var {
+  display: flex;
+  width: 80%;
+}
+
+.right_var {
+  display: flex;
+  width: 30%;
+}
+
+.Album {
+  margin-right: 18px;
+}
+
+.logo {
+  width: 26%;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.right_var a {
+  /*nav바 안에 있는 모든 a태그의 밑줄 사라지게 하기*/
+  text-decoration: none; /* anchor태그가 가지고 있는 기본 속성 없애기*/
+  color: #000000; /* 글자 색 검정*/
+}
+.Album a:after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px var(--first-color); /* hover일 때 밑줄 생기도록 */
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.Album a:hover:after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 .container {
   max-width: 880px;
 }
+
 .title {
   display: flex;
   border-bottom: 1px solid #000000;
@@ -36,6 +83,11 @@ button {
 
 .tooi-tip {
   position: absolute;
+}
+
+.retouch .icon:hover {
+  cursor: wait;
+  
 }
 
 .tip {
@@ -98,7 +150,7 @@ button {
 }
 .retouch {
   display: flex;
-  margin: 50px 0;
+  margin: 30px 0;
   justify-content: center;
   align-items: center;
 }
@@ -121,10 +173,10 @@ button {
   font-size: 14px;
   display: none;
   width: 200px;
-  padding: 8px;
   border: 1px solid #ffd874;
-  top: -150px; /* 위로 올리기 */
-  padding: 10px 10px;
+  top: -110px; /* 위로 올리기 */
+  padding: 5px 5px;
+  font-size: 10px;
 }
 
 .speech-bubble::after {
@@ -134,7 +186,7 @@ button {
   left: -15%;
   width: 0;
   height: 0;
-  top: 39px;
+  top: 29px;
   border: 10px solid transparent;
   border-top-color: #ffd874;
   /* border-left: 10px solid transparent;
@@ -152,6 +204,7 @@ div > i:nth-child(2):hover {
 button:hover + .speech-bubble {
   display: block;
 }
+<<<<<<< HEAD
 Button:hover {
   opacity: 0.6;
 }
@@ -161,5 +214,59 @@ Button:hover {
   }
   .save-btn {
     margin-right: 3vw;
+=======
+
+.speech-bubble img { /*div > img*/
+  width: 50px;
+  height: 50px;
+}
+
+.no {
+  position: absolute;
+  z-index: 98;
+  height: 100vh;
+  background-color: var(--first-color);
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  top: 0;
+}
+
+.no-bubble {
+  position: absolute; /* 공중에 띄우기 / 절대 위치 / 후에 부모 엘리먼트 위에 겹쳐서 배치하기 위해*/
+  background: #ffffff;
+  border-radius: 0.4em;
+  font-size: 20px;
+  display: block;
+  width: 300px;
+  border: 1px solid #ffd874;
+  top: 10%; /* 위로 올리기 */
+  padding: 5px 5px;
+  font-size: 13px;
+  margin-left: 30px;
+}
+
+.no-bubble::after {
+  content: "";
+  position: relative; /* 상대 위치 */
+  width: 0;
+  height: 0;
+  left: 35%;
+  top: 33px;
+  border: 10px solid transparent;
+  border-top-color: #ffffff;
+  margin-left: -200px;
+}
+
+.no-img {
+  width: 400px;
+  margin-top: 200px;
+}
+
+@media screen and (min-width: 668px) {
+  .no {
+    display: none;
+>>>>>>> origin/yunyoung
   }
 }
