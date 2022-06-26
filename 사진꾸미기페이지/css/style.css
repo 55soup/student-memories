@@ -107,7 +107,7 @@ button {
 }*/
 .save-btn {
   float: right;
-  margin-right: 26vw;
+  /* margin-right: 26vw; */
 }
 .save-btn > button {
   width: 144px;
@@ -152,7 +152,9 @@ div > i:nth-child(2):hover {
 button:hover + .speech-bubble {
   display: block;
 }
-
+Button:hover {
+  opacity: 0.6;
+}
 @media screen and (max-width: 768px) {
   .title .inner {
     column-gap: 49vw;
