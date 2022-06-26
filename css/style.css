@@ -19,6 +19,7 @@ body {
 section {
   margin-bottom: 400px;
 }
+
 /*네비게이션 바================================================*/
 header {
   height: 64px;
@@ -138,8 +139,26 @@ section > div {
   margin-top: 10%;
 }
 
-/*footer*/
-
+/* footer */
+.main-footer {
+  display: flex;
+  position: absolute;
+  left: 23vw;
+}
+.main-footer li {
+  display: inline;
+}
+.footerTitle {
+  font-size: 20px;
+}
+.developerFooter {
+  margin-right: 40px;
+}
+a:visited {
+  /* 방문한 링크 검정. */
+  color: black;
+}
+/* footer ///////////////////////////*/
 @media screen and (max-width: 1000px) {
   .logo {
     width: 26%;
@@ -198,5 +217,15 @@ section > div {
     position: absolute;
     left: 24vw;
     top: 265px;
+  }
+
+  /* footer */
+  footer {
+    font-size: 12px;
+  }
+  .main-footer {
+    justify-content: center;
+    position: static;
+    margin: 10px;
   }
 }
