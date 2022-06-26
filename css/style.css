@@ -33,6 +33,11 @@ header {
   width: 38%;
   background-size: contain;
 }
+
+.logo:hover {
+  cursor: pointer;
+}
+
 .main_navbar {
   display: flex;
   width: 100%;
