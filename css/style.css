@@ -47,8 +47,16 @@ nav a {
   text-decoration: none; /* anchor태그가 가지고 있는 기본 속성 없애기*/
   color: #000000; /* 글자 색 검정*/
 }
-nav a:hover {
-  border-bottom: solid var(--first-color); /* hover일 때 밑줄 생기도록 */
+nav a:after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px var(--first-color); /* hover일 때 밑줄 생기도록 */
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+nav a:hover:after {
+  transform: scaleX(1);
+  transform-origin: left;
   /* text-decoration: underline;
   text-decoration-color: var(--first-color); */
 }
@@ -86,6 +94,10 @@ button:hover {
   display: none;
   border: none;
   background-color: transparent;
+}
+.bestPhotoTitle {
+  position: absolute;
+  left: 24vw;
 }
 
 @media screen and (max-width: 768px) {
@@ -131,7 +143,6 @@ button:hover {
     position: fixed;
   }
 }
-/*네비게이션 바================================================*/
 
 /*베스트 포토, 투데이 포토================================================*/
 
@@ -161,6 +172,5 @@ button:hover {
   margin-top: 10%;
 }
 
-/*베스트 포토, 투데이 포토================================================*/
 
 /*footer*/
