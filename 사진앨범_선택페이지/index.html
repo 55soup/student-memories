@@ -31,7 +31,7 @@
       /*글씨 사진 위로 올리기*/
       z-index: 50;
       position: absolute;
-      top: 50%;
+      top: 53%;
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
@@ -44,11 +44,10 @@
       justify-content: space-between;
     }
     .items_images {
+      cursor: pointer;
       width: 45%;
       padding: 10px;
       position: relative;
-    }
-    .items_images:hover {
     }
     .add_album {
     }
@@ -73,7 +72,10 @@
   <body>
     <div class="photo_wrapper">
       <!-- <a href="사진앨범페이지/index.html"> -->
-      <div class="items_images">
+      <div
+        class="items_images"
+        onclick="location.href='../사진앨범페이지/index.html';"
+      >
         <div class="album_name">윤영이의♥ 라부라부 갤리리</div>
         <img src="img/folder_svg.svg" alt="folder_svg" />
       </div>
@@ -83,10 +85,10 @@
         <img src="img/folder_svg.svg" alt="folder_svg" />
       </div>
       <div class="items_images add_album">
-        <button class="album_name"><i data-feather="plus-circle"></i></button>
         <img src="img/folder_svg.svg" alt="folder_svg" />
       </div>
       <div class="items_images">
+        <button class="album_name"><i data-feather="plus-circle"></i></button>
         <img src="img/folder_svg.svg" alt="folder_svg" />
       </div>
     </div>
