@@ -3,7 +3,7 @@ html {
 }
 
 * {
-  font-family: "Titan One", cursive;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 :root {
@@ -245,7 +245,7 @@ a:visited {
   /* bestphoto 섹션 */
   section > div {
     /*BestPhoto, TodayPhoto 섹션 제목들*/
-    font-size: 12px;
+    font-size: 15px;
     position: absolute;
     left: 24vw;
   }
