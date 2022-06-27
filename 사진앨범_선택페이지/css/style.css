@@ -1,8 +1,8 @@
 * {
-  margin: 0 auto; /*중앙정렬*/
-  /* border: 1px solid red; */
   max-width: 1180px; /*최대크기*/
+  margin: 0 auto; /*중앙정렬*/
   padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 :root {
@@ -10,67 +10,69 @@
   --second-color: #ffdabf;
 }
 
+/* Header */
 header {
   height: 64px;
-  display: flex; /*한 줄 정렬*/
-  align-items: center;
-  top: 0;
-  background-color: white;
   margin: 0;
   padding: 16px;
+  display: flex; /*한 줄 정렬*/
   position: fixed;
+  background-color: white;
+  align-items: center;
+  top: 0;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}
+select {
+  margin: unset; /*중앙정렬 해제*/
+  /* -webkit-appearance: none; 네이티브 외형 감추기 */
+}
+button {
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+img {
+  max-width: 100%;
+  position: relative;
+  z-index: -1;
 }
 
 .nav_bar {
+  width: 80%;
   margin-right: 16vw;
   display: flex;
-  width: 80%;
 }
-
-.right_var {
-  display: flex;
-  width: 30%;
-}
-
-.Album {
-  margin-right: 18px;
-}
-
 .logo {
   width: 26%;
 }
-
-a {
-  text-decoration: none;
-  color: #000000;
+.right_var {
+  width: 30%;
+  display: flex;
 }
-
 .right_var a {
   /*nav바 안에 있는 모든 a태그의 밑줄 사라지게 하기*/
   text-decoration: none; /* anchor태그가 가지고 있는 기본 속성 없애기*/
   color: #000000; /* 글자 색 검정*/
 }
-
 .photo-btn {
-  color: #000000;
   width: 150px;
   height: 38px;
+  color: #000000;
+  background-color: var(--first-color);
   font-size: 12px;
   border: none;
-  background-color: var(--first-color);
 }
-
 .photo-btn:hover {
   cursor: pointer;
 }
 
+/* Main */
 .album_title {
+  padding: 80px 0 60px 0; /* 상 우 하 좌*/
   text-align: center;
-  padding: 80px 0 60px 0;
-}
-select {
-  margin: unset; /*중앙정렬 해제*/
-  /* -webkit-appearance: none; 네이티브 외형 감추기 */
 }
 .sort_images {
   display: flex;
@@ -78,17 +80,6 @@ select {
   padding: 5px;
   margin-right: 15px;
 }
-.album_name {
-  /*글씨 사진 위로 올리기*/
-  z-index: 50;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  white-space: nowrap;
-}
-
 .photo_wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -102,21 +93,18 @@ select {
 .items_images:hover {
   cursor: pointer;
 }
-.add_album {
-}
-button {
-  border: none;
-  background-color: transparent;
-  color: white;
-}
-img {
-  max-width: 100%;
-  position: relative;
-  z-index: -1;
+.album_name {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  z-index: 50;   /*글씨 사진 위로 올리기*/
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) { /* 768 px 이하면 */
   .album_name {
-    font-size: 12px;
+    font-size: 12px; /* 글씨 크기 줄이기 */
   }
 }
