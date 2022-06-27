@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AlbumSelect</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Album Select</title>
   </head>
   <script src="https://unpkg.com/feather-icons"></script>
   <style>
@@ -62,9 +63,21 @@
       z-index: -1;
     }
   </style>
+
   <header>
-    <div class="logo">추억 간지ㄱ 남</div>
+    <div class="nav_bar">
+      <a href="../index.html"><img class="logo" src="../img/logo.png" /></a>
+    </div>
+    <div class="rignt_var">
+      <button
+        class="photo-btn"
+        onclick="location.href='../사진꾸미기페이지/index.html' "
+      >
+        사진 꾸미러 가기! ✨
+      </button>
+    </div>
   </header>
+
   <div class="album_title">
     <h3 class="album_title">Album</h3>
   </div>

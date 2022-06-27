@@ -148,6 +148,9 @@ section > div {
   position: absolute;
   left: 24vw;
 }
+.img {
+  width: 40%;
+}
 /* .photo .todayPhoto {
 } */
 .photo .calandar {
@@ -182,6 +185,9 @@ section > div {
 .developerFooter {
   margin-left: 23vw;
   margin-right: 40px;
+}
+a{
+  color:black;
 }
 a:visited {
   /* 방문한 링크 검정. */
@@ -247,16 +253,36 @@ a:visited {
     left: 24vw;
     top: 258px;
   }
-
-  /* footer */
-  footer {
-    font-size: 12px;
-  }
-  .main-footer {
-    justify-content: center;
-    position: static;
-    margin: 10px;
-  }
 }
 
+/* footer */
+footer {
+  font-size: 12px;
+}
+.main-footer {
+  justify-content: center;
+  position: static;
+  margin: 10px;
+}
+
+.img {
+  width: 40%;
+}
+
+.bestPhoto .img {
+  overflow: auto;
+}
+
+.photo p:nth-child(1) {
+  font-size: 20px;
+}
+
+.photo .bestPhoto {
+  margin-bottom: 10%;
+}
+/* .photo .todayPhoto {
+} */
+.photo .calandar {
+  margin-top: 10%;
+}
 /*footer*/

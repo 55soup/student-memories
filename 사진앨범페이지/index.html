@@ -4,54 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Album main</title>
   </head>
-  <style>
-    * {
-      margin: 0 auto; /*중앙정렬*/
-      /* border: 1px solid red; */
-      max-width: 1180px; /*최대크기*/
-    }
-    .album_name {
-      text-align: center;
-      padding: 150px 0;
-    }
-    select {
-      margin: unset; /*중앙정렬 해제*/
-      /* -webkit-appearance: none; 네이티브 외형 감추기 */
-    }
-    .sort_images {
-      display: flex;
-      justify-content: flex-end; /*오른쪽 정렬*/
-      padding: 5px;
-      margin-right: 15px;
-    }
-    .photo_wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-    .items_images {
-      width: 30%;
-      padding: 0 10px;
-      margin-bottom: 10px;
-    }
-    img {
-      /* max-width: 100%; */
-      width: 100%;
-      height: 100%;
-    }
-
-    @media screen and (max-width: 768px) {
-      .items_images {
-        width: 40%;
-        padding: 0 10px;
-      }
-    }
-  </style>
   <header>
-    <div class="logo">추억 간지ㄱ 남</div>
+    <div class="nav_bar">
+      <a class="arrow" href="../사진앨범_선택페이지/index.html"
+        ><i class="bx bx-arrow-back bx-sm"></i
+      ></a>
+    </div>
+    <div class="rignt_var">
+      <button
+        class="photo-btn"
+        onclick="location.href='../사진꾸미기페이지/index.html' "
+      >
+        사진 꾸미러 가기! ✨
+      </button>
+    </div>
   </header>
+
   <div class="album_title">
     <h3 class="album_name">윤영이의 라부라부 앨범</h3>
   </div>
