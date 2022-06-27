@@ -15,15 +15,14 @@ header {
   display: flex; /*한 줄 정렬*/
   align-items: center;
   top: 0;
-  left: 0;
-  right: 0;
   background-color: white;
   margin: 0;
   padding: 16px;
   position: fixed;
 }
 
-.nav_var {
+.nav_bar {
+  margin-right: 16vw;
   display: flex;
   width: 80%;
 }
