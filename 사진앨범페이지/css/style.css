@@ -1,6 +1,6 @@
 * {
-  max-width: 1180px;
-  margin: 0 auto;
+  max-width: 1180px; /* 이 크기 이상 늘어나지 않음 */
+  margin: 0 auto; /* 가운데 정렬*/
   padding: 0;
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -10,53 +10,57 @@
   --second-color: #ffdabf;
 }
 
+
+/* Header*/
 header {
   width: 100%;
   height: 64px;
-  display: flex; /*한 줄 정렬*/
-  align-items: center;
-  background-color: white;
   margin: 0;
   padding: 16px;
+  display: flex; /*한 줄 정렬*/
   position: fixed;
+  align-items: center;
+  background-color: white;
   gap: 50vw;
 }
 
-div.nav_bar > i:hover {
-  cursor: pointer;
-}
-a:visited {
-  color: black;
+select {
+  margin: unset; /*중앙정렬 해제*/
+  /* -webkit-appearance: none; 네이티브 외형 감추기 */
 }
 
-.nav_bar {
-  display: flex;
-  width: 80%;
+img {
+  /* max-width: 100%; */
+  width: 100%;
+  height: 100%;
+}
+
+div.nav_bar > i:hover { /* i에 커서 올리면 커서 모양 포인터로 */
+  cursor: pointer;
+}
+a:visited { /* 방문한 a 태그의 색이 변하지 않도록*/
+  color: black;
 }
 .right_bar {
   display: flex;
   justify-content: flex-end;
 }
-
 .photo-btn {
   width: 150px;
   height: 38px;
+  background-color: var(--first-color);
   font-size: 12px;
   border: none;
-  background-color: var(--first-color);
 }
-
 .photo-btn:hover {
   cursor: pointer;
 }
 
+
+/* Main */
 .album_name {
-  text-align: center;
-  padding: 150px 0;
-}
-select {
-  margin: unset; /*중앙정렬 해제*/
-  /* -webkit-appearance: none; 네이티브 외형 감추기 */
+  padding: 150px 0; /* 상하 좌우 */
+  text-align: center; /* 앨범 이름 센터*/
 }
 .sort_images {
   display: flex;
@@ -66,21 +70,16 @@ select {
 }
 .photo_wrapper {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-wrap: wrap; /* 줄바꿈 X */
+  justify-content: space-around; /* 양끝 같은 간격, 요소 간격은 양끝 간격의 두 배 */
 }
 .items_images {
   width: 30%;
-  padding: 0 10px;
   margin-bottom: 10px;
-}
-img {
-  /* max-width: 100%; */
-  width: 100%;
-  height: 100%;
+  padding: 0 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) { /* 768px 이하이면 */
   .items_images {
     width: 40%;
     padding: 0 10px;
