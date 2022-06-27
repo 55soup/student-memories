@@ -15,58 +15,45 @@ body {
   margin-bottom: 5000px;
   box-sizing: border-box;
   background-color: #fff7f1;
-  -ms-overflow-style: none;
+  -ms-overflow-style: none; /* 스크롤바 없애기*/
 }
-
 ::-webkit-scrollbar {
+  /* 스크롤바 없애기*/
   display: none;
 }
 a:visited {
+  /* a 태그 갔다왔을 때 색깔 black*/
   color: black;
 }
 section {
+  /* 섹션 구분 margin */
   margin-bottom: 22%;
 }
 .img {
-  width: 50%;
-  margin-top: 7vw;
+  width: 50%; /* 이미지 기본 크기 */
+  margin-top: 7vw; /* title과 간극 */
 }
 
-.bestPhoto .img {
-  overflow: auto;
-}
-
-.photo p:nth-child(1) {
-  font-size: 20px;
-}
-
-/* .photo .todayPhoto {
-} */
-.photo .calandar {
-  margin-top: 10%;
-}
-/*네비게이션 바================================================*/
+/* 네비게이션 바 */
 header {
   height: 86px; /*크기가 다른 페이지들 보다 작은 거 같아서*/
   display: flex; /*한 줄 정렬*/
-  align-items: center;
+  padding: 16px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  align-items: center;
   background-color: white;
-  padding: 16px;
-  z-index: 100;
+  z-index: 100; /* 레이아웃 중 맨 앞 */
 }
 .logo {
   width: 38%;
-  background-size: contain;
 }
 
 .logo:hover {
   cursor: pointer;
 }
-
 .main_navbar {
   display: flex;
   width: 100%;
@@ -81,6 +68,7 @@ nav a {
   text-decoration: none; /* anchor태그가 가지고 있는 기본 속성 없애기*/
   color: #000000; /* 글자 색 검정*/
 }
+/* nav바 hover시 밑줄 애니메이션 구현 */
 nav a:after {
   display: block;
   content: "";
@@ -89,10 +77,8 @@ nav a:after {
   transition: transform 250ms ease-in-out;
 }
 nav a:hover:after {
-  transform: scaleX(1);
+  transform: scaleX(1); /*마우스 오버됐을 때 밑줄이 생김 */
   transform-origin: left;
-  /* text-decoration: underline;
-  text-decoration-color: var(--first-color); */
 }
 
 button:hover {
@@ -100,20 +86,21 @@ button:hover {
 }
 
 .left_bar {
-  margin-right: 3%;
+  margin-right: 3%; /* right bar 띄우기 */
   display: flex;
   width: 100%;
-  justify-content: flex-end;
+  justify-content: flex-end; /* 오른쪽에 붙이기 */
 }
 .right_bar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end; /* 오른쪽에 붙이기 */
 }
 .nav-item {
   list-style: none;
   margin: 0 20px;
 }
 .btn_preety {
+  /* 사진꾸미러가기 버튼 */
   width: 150px;
   height: 38px;
   font-size: 12px;
@@ -122,20 +109,21 @@ button:hover {
 }
 .btn_preety:hover {
   opacity: 0.6;
-  transition: 0.3s;
 }
 .btn_menu {
+  /* 햄버거 메뉴 아이콘 */
   display: none;
   border: none;
-  background-color: transparent;
+  background-color: transparent; /* 배경 투명하게 */
 }
 .bestPhotoTitle {
   position: absolute;
   left: 24vw;
 }
 
-/*베스트 포토, 투데이 포토================================================*/
+/* BestPhoto */
 .highlight {
+  /* BestPhoto title 형광펜 */
   width: 148px;
   height: 33px;
   z-index: -1;
@@ -151,28 +139,21 @@ section > div {
   left: 24vw;
 }
 .photo {
-  margin-top: 250px;
-  text-align: center;
-}
-.bestPhotoTitle {
-  position: absolute;
-  left: 24vw;
-  width: 40%;
+  /* 메인화면 섹션들 */
+  margin-top: 250px; /* header 간격*/
+  text-align: center; /* 글 가운데 정렬*/
 }
 
-/* .photo .todayPhoto {
-} */
-.photo .calandar {
-  margin-top: 10%;
-}
+/* todayPhoto */
 .todayPhoto-box {
+  /* 이미지, 글을 감싸는 엘리먼트 */
   width: 30.33%;
   height: 30.33%;
-  overflow: hidden;
   position: static;
   margin-left: 36vw;
 }
 .todayPhoto-img {
+  /* todayPhoto-box안에있는 이미지 */
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -204,6 +185,22 @@ a {
 a:visited {
   /* 방문한 링크 검정. */
   color: black;
+}
+/* footer */
+footer {
+  font-size: 12px;
+}
+.main-footer {
+  justify-content: center;
+  position: static;
+  margin: 10px;
+}
+.photo p:nth-child(1) {
+  font-size: 20px;
+}
+/* Calandar */
+.photo .calandar {
+  margin-top: 10%;
 }
 /* footer ///////////////////////////*/
 @media screen and (max-width: 1000px) {
@@ -243,12 +240,11 @@ a:visited {
     width: 300px;
   }
   .btn_menu {
-    display: block;
+    display: block; /* 햄버거 메뉴 보이게 */
     position: absolute;
     right: 12px;
     width: 40px;
     height: 40px;
-    transition: 0.3s;
     position: fixed;
   }
   /* bestphoto 섹션 */
@@ -276,28 +272,3 @@ a:visited {
     font-size: 9px;
   }
 }
-
-/* footer */
-footer {
-  font-size: 12px;
-}
-.main-footer {
-  justify-content: center;
-  position: static;
-  margin: 10px;
-}
-
-.bestPhoto .img {
-  overflow: auto;
-}
-
-.photo p:nth-child(1) {
-  font-size: 20px;
-}
-/* .photo .todayPhoto {
-} */
-.photo .calandar {
-  margin-top: 10%;
-}
-
-/*footer*/
