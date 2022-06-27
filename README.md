@@ -3,26 +3,6 @@
 https://edu.goorm.io/lecture/30724/입문자를-위한-반응형-웹-기초-강의
 그 외 유튜브 강의 수강
 
-# YunTube 제작
-
-![image](https://user-images.githubusercontent.com/87300199/172060331-1adbd28f-504a-43ad-9c74-0d87e8807f3f.png)
-
-![image](https://user-images.githubusercontent.com/87300199/172060344-771af9f0-3f6a-4495-ad14-2a900eaed6d7.png)
-
-![image](https://user-images.githubusercontent.com/87300199/172060349-eaa78485-7144-4579-9e5a-db7a2d3474c7.png)
-
-![image](https://user-images.githubusercontent.com/87300199/172060361-95fbdbb8-1a35-467e-8a94-06fbbe27eea4.png)
-=======
-# StudentMemories
-
-----
-
-![image](https://user-images.githubusercontent.com/87300199/172023981-539484ce-0ac1-4adc-ad43-2cc035c77ef6.png)
-
-![image](https://user-images.githubusercontent.com/87300199/172024011-2776f815-bd7e-42b4-9c24-3fe594ab0a3d.png)
-
-![image](https://user-images.githubusercontent.com/87300199/172023991-fdab760e-a909-4416-901b-223ee986d953.png)
-
 ----
 
 # 제작 기간
@@ -44,8 +24,9 @@ https://edu.goorm.io/lecture/30724/입문자를-위한-반응형-웹-기초-강�
 
 6.10 - 6.12: HTML, CSS로 화면 구현</br>
 6.14~6.24: JS로 화면 인터렉티브 구현</br>
-6.27 - 6.29: 홈페이지 테스트 및 버그 잡기. (점검)</br>
-6.30: 프로젝트 구현물 제출</br>
+6.27 : 홈페이지 테스트 및 버그 잡기 및 main 브랜치 병합</br>
+6.28 : 프로젝트 구현물 zoom 촬영 및 발표 준비</br>
+6.29 : 최종 점검 후 제출
 
 ### 일정은 학교 스케출, 팀원 스케줄에 따른 변동이 많음!
 
