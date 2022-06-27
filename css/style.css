@@ -3,7 +3,7 @@ html {
 }
 
 * {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Titan One', cursive;
 }
 
 :root {
@@ -14,6 +14,7 @@ body {
   margin: 0;
   margin-bottom: 5000px;
   box-sizing: border-box;
+  background-color: #fff7f1;
 }
 
 a:visited {
@@ -44,7 +45,7 @@ section {
 }
 /*네비게이션 바================================================*/
 header {
-  height: 64px;
+  height: 86px; /*크기가 다른 페이지들 보다 작은 거 같아서*/
   display: flex; /*한 줄 정렬*/
   align-items: center;
   position: fixed;
@@ -52,7 +53,6 @@ header {
   left: 0;
   right: 0;
   background-color: white;
-  margin: 0;
   padding: 16px;
   z-index: 100;
 }
@@ -127,13 +127,12 @@ button:hover {
   border: none;
   background-color: transparent;
 }
-<<<<<<< HEAD
+
 .bestPhotoTitle {
   position: absolute;
   left: 24vw;
 }
-=======
->>>>>>> origin/sunjo
+
 /*베스트 포토, 투데이 포토================================================*/
 .highlight {
   width: 148px;
@@ -154,16 +153,11 @@ section > div {
   margin-top: 250px;
   text-align: center;
 }
-<<<<<<< HEAD
 
 .img {
   width: 40%;
-=======
-.bestPhotoTitle {
-  position: absolute;
-  left: 24vw;
->>>>>>> origin/sunjo
 }
+
 /* .photo .todayPhoto {
 } */
 .photo .calandar {
@@ -237,11 +231,6 @@ a:visited {
     transition: 0.3s;
     position: fixed;
   }
-<<<<<<< HEAD
-}
-
-=======
->>>>>>> origin/sunjo
   /* bestphoto 섹션 */
   section > div {
     /*BestPhoto, TodayPhoto 섹션 제목들*/
@@ -266,31 +255,7 @@ a:visited {
     position: static;
     margin: 10px;
   }
-<<<<<<< HEAD
 
-.img {
-  width: 40%;
 }
-
-.bestPhoto .img {
-  overflow: auto;
-}
-
-.photo p:nth-child(1) {
-  font-size: 20px;
-}
-
-.photo .bestPhoto {
-  margin-bottom: 10%;
-}
-/* .photo .todayPhoto {
-} */
-.photo .calandar {
-  margin-top: 10%;
-}
-
-=======
-}
->>>>>>> origin/sunjo
 
 /*footer*/
