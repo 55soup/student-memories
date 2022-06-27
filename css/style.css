@@ -265,8 +265,7 @@ a:visited {
     left: 24vw;
     top: 258px;
   }
-<<<<<<< HEAD
-=======
+
   .todayPhoto-box {
     width: 50%;
     margin: 0 auto;
@@ -277,33 +276,16 @@ a:visited {
   .todayPhoto-box p {
     font-size: 9px;
   }
->>>>>>> origin/sunjo
-}
+
 
 /* footer */
 footer {
   font-size: 12px;
 }
+
 .main-footer {
   justify-content: center;
   position: static;
   margin: 10px;
 }
-<<<<<<< HEAD
-=======
-
-.bestPhoto .img {
-  overflow: auto;
 }
-
-.photo p:nth-child(1) {
-  font-size: 20px;
-}
-/* .photo .todayPhoto {
-} */
-.photo .calandar {
-  margin-top: 10%;
-}
-
->>>>>>> origin/sunjo
-/*footer*/
