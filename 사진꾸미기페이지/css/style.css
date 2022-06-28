@@ -159,16 +159,16 @@ Button:hover {
 
 .speech-bubble::after {
   /* 가상 요소 ::after = 요소의 콘텐츠 부분에 생성된 콘텐츠 추가 */
+  position: relative; /* 상대 위치 */
   width: 0;
   height: 0;
+  left: -15%;
   margin-left: -10px;
-  position: relative; /* 상대 위치 */
+  top: 29px;
+  bottom: 0;
+  border: 10px solid transparent;
   border-top-color: #ffd874;
   content: "";
-  bottom: 0;
-  left: -15%;
-  top: 29px;
-  border: 10px solid transparent;
 }
 
 .speech-bubble > img {
