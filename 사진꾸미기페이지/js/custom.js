@@ -14,7 +14,6 @@ if (saveBtn) {
 }
 /* 로컬 세이브 구현 */
 
-
 /* 파일 드래그 앤 드롭 구현 */
 function DropFile(dropAreaId, fileListId) {
   let dropArea = document.getElementById(dropAreaId);

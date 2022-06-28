@@ -27,6 +27,11 @@ a {
   text-decoration: none;
 }
 
+Button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
 .nav_var {
   width: 80%;
   display: flex;
@@ -36,7 +41,8 @@ a {
   width: 30%;
   display: flex;
 }
-.right_var a { /*nav바 안에 있는 모든 a태그의 밑줄 사라지게 하기*/
+.right_var a {
+  /*nav바 안에 있는 모든 a태그의 밑줄 사라지게 하기*/
   color: #000000; /* 글자 색 검정*/
   text-decoration: none; /* anchor태그가 가지고 있는 기본 속성 없애기*/
 }
@@ -51,7 +57,8 @@ a {
   transform: scaleX(0); /* x축 확대 2D애니메이션 */
   transition: transform 250ms ease-in-out; /* 0.25초로 처음과 끝이 느리게 늘어나도록 */
 }
-.Album a:hover:after { /* 마우스 오버됐을 때 after에 있는 속성이 적용 */
+.Album a:hover:after {
+  /* 마우스 오버됐을 때 after에 있는 속성이 적용 */
   transform: scaleX(1); /* 1만큼 x축 확대*/
   transform-origin: left;
 }
@@ -95,22 +102,24 @@ a {
   justify-content: center;
   border: 3px solid #2f2f2f2f;
 }
-.upload-box .drag-file.highlight { /* js highlight 클래스*/
+.upload-box .drag-file.highlight {
+  /* js highlight 클래스*/
   border: 3px dashed var(--first-color); /* 파일을 드래그 했을 때 보더 라인 색상 변경, 라인 스타일 */
 }
 .upload-box .drag-file .image {
   width: 40px; /* 드롭된 이미지 크기*/
 }
-.upload-box .drag-file .message { /* 드래그 앤 드롭 메시지  */
+.upload-box .drag-file .message {
+  /* 드래그 앤 드롭 메시지  */
   margin-bottom: 0;
 }
-.upload-box .drag-file .preview { /* js preview 클래스*/
+.upload-box .drag-file .preview {
+  /* js preview 클래스*/
   width: 100%;
   height: 100%;
   display: none; /* 안 보이게 */
   position: absolute; /* 공중에 띄우기*/
   left: 0;
-  height: 0;
   object-fit: contain; /* 이미지 꽉 차게 */
 }
 
@@ -134,7 +143,6 @@ a {
   position: relative;
 }
 
-
 /* too-tip  */
 .speech-bubble {
   width: 200px;
@@ -149,7 +157,8 @@ a {
   font-size: 10px;
 }
 
-.speech-bubble::after { /* 가상 요소 ::after = 요소의 콘텐츠 부분에 생성된 콘텐츠 추가 */
+.speech-bubble::after {
+  /* 가상 요소 ::after = 요소의 콘텐츠 부분에 생성된 콘텐츠 추가 */
   width: 0;
   height: 0;
   margin-left: -10px;
@@ -162,17 +171,19 @@ a {
   border: 10px solid transparent;
 }
 
-.speech-bubble > img { /* tool-tip + img */
+.speech-bubble > img {
+  /* tool-tip + img */
   width: 50px;
   height: 50px;
 }
-div > i:nth-child(2):hover { /* 아이콘 세 번째는 move 모양 */
+div > i:nth-child(2):hover {
+  /* 아이콘 세 번째는 move 모양 */
   cursor: move;
 }
-button:hover + .speech-bubble { /* 말풍선에 hover 되면 보이게 */
+button:hover + .speech-bubble {
+  /* 말풍선에 hover 되면 보이게 */
   display: block;
 }
-
 
 /* 아이콘 */
 .icon-content {
@@ -188,7 +199,6 @@ button:hover + .speech-bubble { /* 말풍선에 hover 되면 보이게 */
   cursor: wait;
 }
 
-
 /* 저장 버튼 */
 button {
   border-style: none;
@@ -200,7 +210,6 @@ button {
   width: 144px;
   height: 43px;
 }
-
 
 /* 미디어 쿼리 지정 속성 */
 .no {
@@ -243,13 +252,12 @@ button {
   width: 400px;
 }
 
-@media screen and (min-width: 668px) { /* 가로가 668 이하면 적용 */
+@media screen and (min-width: 668px) {
+  /* 가로가 668 이하면 적용 */
   .no {
     display: none;
   }
-}
-
-Button:hover {
-  opacity: 0.6;
-  cursor: pointer;
+  .save-btn {
+    margin-right: 20px;
+  }
 }
