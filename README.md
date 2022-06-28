@@ -19,13 +19,13 @@
 ---
 
 ![image](https://user-images.githubusercontent.com/86298664/176176606-3dbd6271-5404-49ff-b6a4-eb2d2e654014.png)  
-로고입니다. 클릭할 시 메인화면으로 넘어갑니다.
+- 로고입니다. 클릭할 시 메인화면으로 넘어갑니다.
 
 ![image](https://user-images.githubusercontent.com/86298664/176175021-f4175b72-a7e6-46c8-ac8e-10e80c52e1e5.png)
-헤더 전체
+- 헤더 전체
 
 ![image](https://user-images.githubusercontent.com/86298664/176175085-0c55a411-0b3a-4d0a-ba9e-6d9dba9021ce.png)  
-메인화면에서 선택할 수 있는 섹션들
+- 메인화면에서 선택할 수 있는 섹션들
 
 ![image](https://user-images.githubusercontent.com/86298664/176175103-3ff312e5-da72-4d13-b9d2-a9316fa093ad.png)  
 - 클릭하면 다른 기능이 있는 페이지로 넘어갈 수 있습니다.
@@ -57,9 +57,14 @@
 ---
 ![image](https://user-images.githubusercontent.com/86298664/176178436-ad9f230e-e4b3-4a7e-b6ec-3d7bcb9296f3.png)  
 
+#### drag & drop
+![image](https://user-images.githubusercontent.com/86298664/176186072-cbc75ea3-20ae-4f6a-94f1-c20298bc1f97.png)  
+이미지를 드래그앤 드롭할 수 있습니다.
+
 #### 간zi쌤의 tip
 ---
-![image](https://user-images.githubusercontent.com/86298664/176179542-27437eb7-6a50-4f85-a7e5-d2e1fc45d510.png)
+![image](https://user-images.githubusercontent.com/86298664/176191695-dc9259a5-8fca-435f-b6a2-23b666ac231a.png)  
+- 처음 꾸미기 페이지에 들어가 낯선 사람들을 위한 메시지창입니다.
 
 
 ### 앨범 선택 페이지 📁
