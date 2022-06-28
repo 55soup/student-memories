@@ -13,7 +13,7 @@ html {
 body {
   margin: 0;
   box-sizing: border-box;
-  background-color: #fff7f1;
+  background-color: #f7f8f8;
   -ms-overflow-style: none; /* 스크롤바 없애기*/
 }
 ::-webkit-scrollbar {
