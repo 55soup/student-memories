@@ -171,7 +171,7 @@ body.lb-disable-scrolling {
   opacity: 1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .lb-outerContainer {
     position: relative;
     width: 63vw !important;
@@ -185,9 +185,9 @@ body.lb-disable-scrolling {
     height: 42vw !important;
   }
   .lb-data .lb-details {
-    line-height: 18.1em;
-  }
-  .lb-data .lb-details {
     line-height: 3em;
+    max-width: 30em;
+    float: unset;
+    text-align: unset;
   }
 }
