@@ -12,12 +12,12 @@
 ***추억 (간지ㄱ)남*은 학창시절의 기억을 간직할 수 있는 웹서비스 입니다.**
 
 ## 주요기능🔧
-### [메인화면 👑](https://github.com/olsi10/StudentMemories/wiki/header)
+### [메인화면 👑](https://github.com/olsi10/StudentMemories/wiki/%EB%A9%94%EC%9D%B8%ED%99%94%EB%A9%B4-%F0%9F%91%91)
 #### 전체화면
 ---
 ![image](https://user-images.githubusercontent.com/86298664/176174610-9e5b3e2c-0ccb-43f0-89ea-468152a6c935.png)
 ---
-### [사진꾸미기 페이지 🎨](https://github.com/olsi10/StudentMemories/wiki/%EC%82%AC%EC%A7%84%EA%BE%B8%EB%AF%B8%EA%B8%B0-%ED%8E%98%EC%9D%B4%EC%A7%80)
+### [사진꾸미기 페이지 🎨](https://github.com/olsi10/StudentMemories/wiki/%EC%82%AC%EC%A7%84%EA%BE%B8%EB%AF%B8%EA%B8%B0-%ED%8E%98%EC%9D%B4%EC%A7%80-%F0%9F%8E%A8)
 #### 전체 화면
 ---
 ![image](https://user-images.githubusercontent.com/86298664/176178436-ad9f230e-e4b3-4a7e-b6ec-3d7bcb9296f3.png)  
