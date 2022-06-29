@@ -1,4 +1,4 @@
-* {
+body {
   max-width: 1180px; /* 이 크기 이상 늘어나지 않음 */
   margin: 0 auto; /* 가운데 정렬*/
   padding: 0;
@@ -9,7 +9,6 @@
   --first-color: #ffd874;
   --second-color: #ffdabf;
 }
-
 
 /* Header*/
 header {
@@ -35,10 +34,12 @@ img {
   height: 100%;
 }
 
-div.nav_bar > i:hover { /* i에 커서 올리면 커서 모양 포인터로 */
+div.nav_bar > i:hover {
+  /* i에 커서 올리면 커서 모양 포인터로 */
   cursor: pointer;
 }
-a:visited { /* 방문한 a 태그의 색이 변하지 않도록*/
+a:visited {
+  /* 방문한 a 태그의 색이 변하지 않도록*/
   color: black;
 }
 .right_bar {
@@ -55,7 +56,6 @@ a:visited { /* 방문한 a 태그의 색이 변하지 않도록*/
 .photo-btn:hover {
   cursor: pointer;
 }
-
 
 /* Main */
 .album_name {
@@ -79,7 +79,8 @@ a:visited { /* 방문한 a 태그의 색이 변하지 않도록*/
   padding: 0 10px;
 }
 
-@media screen and (max-width: 768px) { /* 768px 이하이면 */
+@media screen and (max-width: 768px) {
+  /* 768px 이하이면 */
   .items_images {
     width: 40%;
     padding: 0 10px;

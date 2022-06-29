@@ -13,9 +13,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
+    <!-- light box 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/lightBox.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+    <!-- light box 불러오기 -->
     <title>Album main</title>
   </head>
-
   <!-- Header -->
   <header>
       <a class="arrow" href="../사진앨범_선택페이지/index.html"
@@ -44,9 +48,11 @@
   <body>
     <div class="photo_wrapper">
       <div class="items_images">
+        <a href="https://m.young.hyundai.com:444/upload/CMS_NEWS_IMAGE/2018/06/15/CMS_NEWS_IMAGE_NFbumZE4KE5KNz6hhQOo.jpg" data-title="내가 찍은 예쁜 꽃 사진! 봄이 왔다." data-lightbox="example-set">
         <img
           src="https://m.young.hyundai.com:444/upload/CMS_NEWS_IMAGE/2018/06/15/CMS_NEWS_IMAGE_NFbumZE4KE5KNz6hhQOo.jpg"
         />
+      </a>
       </div>
       <div class="items_images">
         <img
@@ -78,4 +84,12 @@
       </div>
     </div>
   </body>
+  <script>
+    lightbox.option({
+    resizeDuration: 200,
+    wrapAround: true,
+    disableScrolling: false,
+    fitImagesInViewport:false
+  })
+  </script>
 </html>
