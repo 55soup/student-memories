@@ -117,4 +117,7 @@ input[type="radio"]:checked {
     /* 양쪽 버튼 안보이게 하기*/
     display: none;
   }
+  .image-box {
+    height: 384px;
+  }
 }
