@@ -5,11 +5,19 @@
 
 <br />
 
----
+<div align="center">
 
-<p align="center">
+## Use 😎
+
+
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+<br />
+<br />
 <img src="https://user-images.githubusercontent.com/86298664/176171475-fb387179-1c76-4be8-9b2a-e4d9c64599a6.png" />
-</p>
+<br/>
+</div>
 
 ## 기획배경 ✏
 학생, 10대 때 해야할 일이라는 글은 각종 커뮤니티, SNS에서 자주 거론되는 주제입니다.  
@@ -38,8 +46,31 @@
 ---
 ![image](https://user-images.githubusercontent.com/86298664/176343617-f383fef1-8417-43da-b44f-af960a028cbd.png)
 
+<div align="center">
+<br />
+<br />
 
-## 일정 📆
+---
+
+## Developer Info👩‍💻
+
+### Dev 선주 👨‍🦲
+
+<a href="https://github.com/55soup"><img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"></a>
+<a href="https://velog.io/@55soup"><img src="https://img.shields.io/badge/Velog-3DDC84?style=for-the-badge&logo=Blogger&logoColor=white"/></a>
+<a href="https://www.instagram.com/55soup/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=Instagram&logoColor=white"/></a>
+
+### Dev 윤영 🌍
+
+<a href="https://github.com/olsi10"><img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"></a>
+<a href="https://velog.io/@olsi10"><img src="https://img.shields.io/badge/Velog-3DDC84?style=for-the-badge&logo=Blogger&logoColor=white"/></a>
+<a href="https://www.instagram.com/1._.r_zx1/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=Instagram&logoColor=white"/></a>
+
+
+
+----
+
+# 제작 히스토리 🎞
 |제작 기간|제작 내용|제작 여부|
 |:---:|:---:|:---:|
 |5.18|아이디어 회의, 브레인 스토밍 (학생, 요리)|O|
@@ -55,6 +86,3 @@
 |6.29|최종 점검 후 제출|O|
 |6.30|제출 마감일|O|
 
-### 일정은 학교 스케출, 팀원 스케줄에 따른 변동이 많음!
-
-### 최대한 일찍 완성해서 계속 점검하자!
