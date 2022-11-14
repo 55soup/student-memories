@@ -1,6 +1,6 @@
 # 추억 (간지ㄱ)남 😎📸
 ## [기획서 보러가기 🖍](https://docs.google.com/document/d/18HNHYBHTTTnviP7csdkkb1MRh8JsHT7I6p7jrrZWtXI/edit?usp=sharing)
-## [사이트 바로가기✈](https://olsi10.github.io/StudentMemories/)
+## [사이트 바로가기✈](https://olsi10.github.io/student-memories/)
 
 
 <br />
