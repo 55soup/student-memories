@@ -1,0 +1,123 @@
+:root {
+  --first-color: #ffd874;
+  --second-color: #ffdabf;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+
+.slidebox {
+  max-width: 700px;
+  margin: 0 auto;
+  position: static;
+  width: 100%;
+  margin-top: 100px;
+}
+.slidebox .slidelist {
+  position: relative;
+  white-space: nowrap;
+  font-size: 0;
+  overflow: hidden;
+}
+.slidebox .slidelist .slideitem {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fff;
+  width: 100%;
+  transition: all 1s;
+}
+.slidebox .slidelist .slideitem > a {
+  display: block;
+  width: auto;
+  position: relative;
+}
+.slidebox .slidelist .slideitem > a img {
+  max-width: 100%;
+}
+
+.slidebox .slide-control [class*="control"] label {
+  position: static;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slidebox .slide-control [class*="control"] label.prev {
+  left: -50px;
+  font-size: 40px;
+}
+.slidebox .slide-control [class*="control"] label.next {
+  right: -50px;
+  font-size: 40px;
+}
+
+[name="slide"] {
+  display: none;
+}
+#slide01:checked ~ .slidelist .slideitem {
+  left: 0;
+}
+#slide02:checked ~ .slidelist .slideitem {
+  left: -100%;
+}
+#slide03:checked ~ .slidelist .slideitem {
+  left: -200%;
+}
+#slide04:checked ~ .slidelist .slideitem {
+  left: -300%;
+}
+
+.slide-control [class*="control"] {
+  display: none;
+}
+#slide01:checked ~ .slide-control .control01 {
+  display: block;
+}
+#slide02:checked ~ .slide-control .control02 {
+  display: block;
+}
+#slide03:checked ~ .slide-control .control03 {
+  display: block;
+}
+#slide04:checked ~ .slide-control .control04 {
+  display: block;
+}
+
+input[type="radio"]:checked {
+  background-color: var(--first-color);
+}
+.image-box {
+  width: 700px;
+  height: 455px;
+  overflow: hidden;
+}
+.image-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 1000px) {
+  .slidebox {
+    width: 64%;
+  }
+  .slide {
+    display: inline;
+    margin-bottom: 14px;
+  }
+  .prev,
+  .next {
+    /* 양쪽 버튼 안보이게 하기*/
+    display: none;
+  }
+  .image-box {
+    height: 384px;
+  }
+}
